@@ -6,6 +6,11 @@
   home.username = "laooree";
   home.homeDirectory = "/home/laooree";
 
+  # import other modules
+  imports = [
+    # add home-manager modules
+  ];
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.

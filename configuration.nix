@@ -1,10 +1,18 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports =  [
+  imports = [
     ./hardware-configuration.nix
-
     inputs.home-manager.nixosModules.default
+
+    # custom modules
+    ./modules/nixos/fonts.nix
+    ./modules/nixos/emacs.nix
   ];
 
   # Bootloader.
@@ -88,9 +96,12 @@
   users.users.laooree = {
     isNormalUser = true;
     description = "Andrea";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
-    #  thunderbird
+      #  thunderbird
     ];
   };
 
@@ -103,13 +114,13 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    emacs
     git
     neovim
     xremap
     gnome-tweaks
     discord
     zoom-us
+    pokemmo-installer
   ];
 
   systemd.user.targets.graphical-session = {
@@ -122,18 +133,18 @@
     config.modmap = [
       {
         name = "betterCaps";
-	remap = { 
-	  "KEY_CAPSLOCK" = {
-	    "held" = "KEY_LEFTCTRL";
-	    "alone" = "KEY_ESC";
-	    "alone_timeout_millis" = 150; 
-	  };
-	  "KEY_LEFTCTRL" = {
-	    "held" = "KEY_LEFTCTRL";
-	    "alone" = "KEY_CAPSLOCK";
-	    "alone_timeout_millis" = 150; 
-	  };
-	};
+        remap = {
+          "KEY_CAPSLOCK" = {
+            "held" = "KEY_LEFTCTRL";
+            "alone" = "KEY_ESC";
+            "alone_timeout_millis" = 150;
+          };
+          "KEY_LEFTCTRL" = {
+            "held" = "KEY_LEFTCTRL";
+            "alone" = "KEY_CAPSLOCK";
+            "alone_timeout_millis" = 150;
+          };
+        };
       }
     ];
     # withWlroots = true;
@@ -167,11 +178,15 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.05"; # Did you read the comment?
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users."laooree" = import ./home.nix;
   };
+
 
 }
