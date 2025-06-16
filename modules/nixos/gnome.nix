@@ -46,9 +46,23 @@
       iagno # go game
       simple-scan
       tali # poker game
-      totem
       totem # video player
     ]
   );
+
+
+  environment.systemPackages = with pkgs;
+    [
+      # Appearance
+      gnomeExtensions.blur-my-shell
+
+      # Tiling behaviour
+      gnomeExtensions.pip-on-top
+      gnomeExtensions.pop-shell
+      gnomeExtensions.space-bar
+
+      # Customization
+      gnome-tweaks
+    ];
 
 }
