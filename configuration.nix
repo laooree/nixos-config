@@ -13,6 +13,7 @@
     # custom modules
     ./modules/nixos/fonts.nix
     ./modules/nixos/emacs.nix
+    ./modules/nixos/gnome.nix
   ];
 
   # Bootloader.
@@ -56,10 +57,6 @@
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
-
-  # Enable the Gnome Desktop Environment.
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -121,6 +118,7 @@
     discord
     zoom-us
     pokemmo-installer
+    kitty
   ];
 
   systemd.user.targets.graphical-session = {
