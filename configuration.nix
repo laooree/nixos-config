@@ -111,14 +111,14 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    git
-    neovim
-    xremap
-    gnome-tweaks
     discord
-    zoom-us
-    pokemmo-installer
+    git
     kitty
+    neovim
+    pokemmo-installer
+    telegram-desktop
+    xremap
+    zoom-us
   ];
 
   systemd.user.targets.graphical-session = {
