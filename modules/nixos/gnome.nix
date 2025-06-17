@@ -58,8 +58,8 @@
 
       # Tiling behaviour
       gnomeExtensions.pip-on-top
-      gnomeExtensions.pop-shell
-      gnomeExtensions.space-bar
+      gnomeExtensions.paperwm
+      gnomeExtensions.dash-to-dock
 
       # Customization
       gnome-tweaks
