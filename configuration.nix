@@ -119,6 +119,9 @@
     telegram-desktop
     xremap
     zoom-us
+    libreoffice
+    pcloud
+    mullvad-vpn
   ];
 
   systemd.user.targets.graphical-session = {
