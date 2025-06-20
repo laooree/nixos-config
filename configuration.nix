@@ -122,7 +122,12 @@
     zoom-us
     libreoffice
     pcloud
-    mullvad-vpn
+    (python313.withPackages (python-pkgs: with python-pkgs; [
+      numpy
+      dbus-python
+    ]))
+    texliveFull
+    inkscape-with-extensions
   ];
 
   systemd.user.targets.graphical-session = {
@@ -190,5 +195,9 @@
     users."laooree" = import ./home.nix;
   };
 
+  services.mullvad-vpn = {
+    enable = true;
+    package = pkgs.mullvad-vpn;
+  };
 
 }
