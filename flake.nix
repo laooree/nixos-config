@@ -12,14 +12,15 @@
     xremap-flake.url = "github:xremap/nix-flake";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
+  outputs = { self, nixpkgs, ... }@inputs:
+    {
     nixosConfigurations.sigma = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
         inputs.home-manager.nixosModules.default
-	inputs.xremap-flake.nixosModules.default
+        inputs.xremap-flake.nixosModules.default
       ];
     };
   };
