@@ -27,7 +27,7 @@
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
 
     initContent = ''
-      PROMPT=$'\n'"%F{#7fbbe5} %F{#a7c080} %n in %~"$'\n'" %f%k "
+      PROMPT=$'\n'"%F{#7ebae4} %F{#a7c080} %n in %~"$'\n'" %f%k "
 
       zstyle ':completion:*' menu select # tab opens cmp menu
       zstyle ':completion:*' special-dirs true # force . and .. to show in cmp menu
