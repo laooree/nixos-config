@@ -14,6 +14,7 @@
     ./modules/nixos/fonts.nix
     ./modules/nixos/emacs.nix
     ./modules/nixos/gnome.nix
+    ./modules/nixos/gaming.nix
   ];
 
   # Bootloader.
