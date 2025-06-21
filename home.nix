@@ -9,6 +9,7 @@
   # import other modules
   imports = [
     ./modules/home-manager/kitty.nix
+    ./modules/home-manager/zsh.nix
   ];
 
   # This value determines the Home Manager release that your configuration is
