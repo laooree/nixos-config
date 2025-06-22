@@ -10,6 +10,11 @@
     };
 
     xremap-flake.url = "github:xremap/nix-flake";
+
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -21,6 +26,7 @@
         ./configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.xremap-flake.nixosModules.default
+        inputs.stylix.nixosModules.stylix
       ];
     };
   };

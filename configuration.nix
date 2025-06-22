@@ -15,6 +15,7 @@
     ./modules/nixos/emacs.nix
     ./modules/nixos/gnome.nix
     ./modules/nixos/gaming.nix
+    ./modules/nixos/stylix.nix
   ];
 
   # Bootloader.
