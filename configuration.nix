@@ -11,10 +11,10 @@
     inputs.home-manager.nixosModules.default
 
     # custom modules
+    # ./modules/nixos/emacs.nix
     ./modules/nixos/fonts.nix
-    ./modules/nixos/emacs.nix
-    ./modules/nixos/gnome.nix
     ./modules/nixos/gaming.nix
+    ./modules/nixos/gnome.nix
     ./modules/nixos/stylix.nix
   ];
 
