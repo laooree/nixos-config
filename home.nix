@@ -11,6 +11,8 @@
     ./modules/home-manager/kitty.nix
     ./modules/home-manager/zsh.nix
     ./modules/home-manager/cli-tools.nix
+    ./modules/home-manager/emacs.nix
+    ./modules/home-manager/stylix.nix
   ];
 
   # This value determines the Home Manager release that your configuration is
