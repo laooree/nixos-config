@@ -16,6 +16,7 @@
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
     ./modules/nixos/stylix.nix
+    ./modules/nixos/sway.nix
   ];
 
   # Bootloader.
