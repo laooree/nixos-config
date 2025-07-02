@@ -134,6 +134,8 @@
     ]))
     texliveFull
     inkscape-with-extensions
+    tor-browser
+    spotify
   ];
 
   systemd.user.targets.graphical-session = {
