@@ -9,6 +9,7 @@
     mako # notification
     wofi # launcher
     brightnessctl # brightness control
+    swaybg # background utility
   ];
 
   # Enable the gnome-keyring secrets vault. 
@@ -19,6 +20,7 @@
   programs.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
+    package = pkgs.swayfx;
   };
 
 }
