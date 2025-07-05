@@ -1,6 +1,7 @@
 {
   pkgs,
   config,
+  lib,
   ...
 }:
 
@@ -17,6 +18,7 @@
       confirm_os_window_close = 0;
       enable_audio_bell = false;
       window_padding_width = 10;
+      background_opacity = lib.mkForce 0.9;
     };
     # themeFile = "everforest_dark_hard";
     shellIntegration.enableZshIntegration = true;
