@@ -11,6 +11,13 @@
 
     config = {
 
+      colors.focused = {
+        background = lib.mkForce "#${config.lib.stylix.colors.base00}";
+        border = lib.mkForce "#${config.lib.stylix.colors.base0D}";
+        childBorder = lib.mkForce "#${config.lib.stylix.colors.base0D}";
+        indicator = lib.mkForce "#${config.lib.stylix.colors.base0D}";
+        text = lib.mkForce "#${config.lib.stylix.colors.base06}";
+      };
       input = {
         "type:keyboard" = {
           xkb_layout = "it";
@@ -34,7 +41,7 @@
       output."eDP-1" = {
         # scale = "1.2";
         mode = "2560x1600@60Hz";
-        bg = "~/.dotfiles/images/wallpapers/sleepingFox.jpg fill";
+        bg = "~/.dotfiles/images/wallpapers/nord_mountains.png fill";
       };
 
       floating = {
@@ -57,13 +64,77 @@
           "XF86MonBrightnessUp"   = "exec --no-startup-id brightnessctl set +5%";
         };
 
+      bars = [
+        {
+          command = "swaybar";
+          statusCommand = "i3blocks";
+          position = "bottom";
+          fonts = {
+            names = [ "Iosevka Nerd Font" ];
+            style = "Regular";
+            size = 16.0;
+          };
+          colors = {
+            background = "#${config.lib.stylix.colors.base00}";
+            focusedWorkspace = {
+              background = "#${config.lib.stylix.colors.base0D}";
+              border = "#${config.lib.stylix.colors.base0D}";
+              text = "#${config.lib.stylix.colors.base00}";
+            };
+            inactiveWorkspace = {
+              background = "#${config.lib.stylix.colors.base00}";
+              border = "#${config.lib.stylix.colors.base00}";
+              text = "#${config.lib.stylix.colors.base06}";
+            };
+            separator = "#${config.lib.stylix.colors.base06}";
+          };
+        }
+      ];
     };
 
     extraConfig = ''
       blur enable
-      blur_passes 3
-      blur_radius 3
+      blur_passes 1
+      blur_radius 5
     '';
+
+  };
+
+
+  programs.i3blocks = {
+    enable = true;
+    bars =
+      {
+        config = {
+          wifi = {
+            command = "${config.home.homeDirectory}/scripts/i3blocks/wifi.sh";
+            interval = 5;
+          };
+          battery = lib.hm.dag.entryAfter [ "wifi" ] {
+            command = "${config.home.homeDirectory}/scripts/i3blocks/battery.sh";
+            interval = 5;
+          };
+          datetime = lib.hm.dag.entryAfter [ "battery" ] {
+            command = "${config.home.homeDirectory}/scripts/i3blocks/datetime.sh";
+            interval = 5;
+          };
+        };
+      };
+  };
+
+  home.file = {
+    "scripts/i3blocks/wifi.sh" = {
+    source = ./i3blocks_scripts/wifi.sh;
+    executable = true;
+    };
+    "scripts/i3blocks/battery.sh" = {
+    source = ./i3blocks_scripts/battery.sh;
+    executable = true;
+    };
+    "scripts/i3blocks/datetime.sh" = {
+    source = ./i3blocks_scripts/datetime.sh;
+    executable = true;
+    };
   };
 
 }

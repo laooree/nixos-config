@@ -10,6 +10,7 @@
     wofi # launcher
     brightnessctl # brightness control
     swaybg # background utility
+    i3blocks # status utility
   ];
 
   # Enable the gnome-keyring secrets vault. 
