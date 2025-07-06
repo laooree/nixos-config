@@ -11,7 +11,7 @@
     inputs.home-manager.nixosModules.default
 
     # custom modules
-    # ./modules/nixos/emacs.nix
+    ./modules/nixos/emacs.nix
     ./modules/nixos/fonts.nix
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
@@ -131,6 +131,8 @@
     pcloud
     (python313.withPackages (python-pkgs: with python-pkgs; [
       numpy
+
+      # needed for get-eduroam.py
       dbus-python
     ]))
     texliveFull

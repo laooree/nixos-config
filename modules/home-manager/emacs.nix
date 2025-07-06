@@ -7,12 +7,4 @@
     package = pkgs.emacs;
   };
   
-  home.packages = with pkgs; [
-    # configuration dependencies
-    libvterm
-    ripgrep
-    git
-    nixfmt-rfc-style
-  ];
-
 }

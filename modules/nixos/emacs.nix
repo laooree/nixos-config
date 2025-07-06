@@ -6,11 +6,11 @@
     emacs
 
     # configuration dependencies
-    libvterm
     ripgrep
     git
+
+    # formatters
     nixfmt-rfc-style
-    
   ];
 
   fonts.packages = with pkgs; [
