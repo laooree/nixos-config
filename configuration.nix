@@ -139,6 +139,7 @@
     inkscape-with-extensions
     tor-browser
     spotify
+    gcc
   ];
 
   systemd.user.targets.graphical-session = {
