@@ -63,9 +63,9 @@
         let
           modifier = config.wayland.windowManager.sway.config.modifier;
         in lib.mkOptionDefault {
-          "XF86AudioRaiseVolume"  = "exec --no-startup-id pactl set-sink-volume 0 +5%";
-          "XF86AudioLowerVolume"  = "exec --no-startup-id pactl set-sink-volume 0 -5%";
-          "XF86AudioMute"         = "exec --no-startup-id pactl set-sink-mute 0 toggle";
+          "XF86AudioRaiseVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && pkill -RTMIN+10 i3blocks";
+          "XF86AudioLowerVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+10 i3blocks";
+          "XF86AudioMute"         = "exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+10 i3blocks";
           "XF86MonBrightnessDown" = "exec --no-startup-id brightnessctl set 5%-";
           "XF86MonBrightnessUp"   = "exec --no-startup-id brightnessctl set +5%";
         };
@@ -116,7 +116,12 @@
             command = "${config.home.homeDirectory}/scripts/i3blocks/wifi.sh";
             interval = 5;
           };
-          battery = lib.hm.dag.entryAfter [ "wifi" ] {
+          volume = lib.hm.dag.entryAfter [ "wifi" ] {
+            command = "${config.home.homeDirectory}/scripts/i3blocks/volume.sh";
+            interval = 5;
+            signal = 10;
+          };
+          battery = lib.hm.dag.entryAfter [ "volume" ] {
             command = "${config.home.homeDirectory}/scripts/i3blocks/battery.sh";
             interval = 5;
           };
@@ -139,6 +144,10 @@
     };
     "scripts/i3blocks/datetime.sh" = {
     source = ./i3blocks_scripts/datetime.sh;
+    executable = true;
+    };
+    "scripts/i3blocks/volume.sh" = {
+    source = ./i3blocks_scripts/volume.sh;
     executable = true;
     };
   };
