@@ -28,10 +28,10 @@
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
 
     initContent = ''
-      PROMPT=$'\n'"%F{#7ebae4} %F{#${config.lib.stylix.colors.base0B}} %n in %~"$'\n'"%f%k  "
+      PROMPT="%F{#7ebae4} %F{#${config.lib.stylix.colors.base0B}} %n in %~"$'\n'"%f%k  "
 
       zstyle ':completion:*' menu select # tab opens cmp menu
-      zstyle ':completion:*' special-dirs true # force . and .. to show in cmp menu
+      # zstyle ':completion:*' special-dirs true # force . and .. to show in cmp menu
       zstyle ':completion:*' squeeze-slashes false # explicit disable to allow /*/
 
       setopt append_history inc_append_history share_history # better history on exit,
@@ -44,6 +44,24 @@
       unsetopt prompt_sp # don't autoclean blanklines
       stty stop undef # disable accidental ctrl s
       bindkey -e # emacs keybindings
+
+      # Flag to avoid printing newline before first prompt
+      FIRST_PROMPT=1
+
+      function newline_before_prompt() {
+        if [[ $FIRST_PROMPT -eq 1 ]]; then
+          FIRST_PROMPT=0
+        else
+          local last_cmd=$(fc -ln -1)
+          if [[ "$last_cmd" != "clear" ]]; then
+          echo
+          fi
+        fi
+      }
+
+      # Register the hook
+      autoload -Uz add-zsh-hook
+      add-zsh-hook precmd newline_before_prompt
     '';
 
   };
