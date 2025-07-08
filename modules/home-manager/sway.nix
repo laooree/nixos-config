@@ -125,7 +125,11 @@
             command = "${config.home.homeDirectory}/scripts/i3blocks/battery.sh";
             interval = 5;
           };
-          datetime = lib.hm.dag.entryAfter [ "battery" ] {
+          disk = lib.hm.dag.entryAfter [ "battery" ] {
+            command = "${config.home.homeDirectory}/scripts/i3blocks/disk.sh";
+            interval = 5;
+          };
+          datetime = lib.hm.dag.entryAfter [ "disk" ] {
             command = "${config.home.homeDirectory}/scripts/i3blocks/datetime.sh";
             interval = 5;
           };
@@ -148,6 +152,10 @@
     };
     "scripts/i3blocks/volume.sh" = {
     source = ./i3blocks_scripts/volume.sh;
+    executable = true;
+    };
+    "scripts/i3blocks/disk.sh" = {
+    source = ./i3blocks_scripts/disk.sh;
     executable = true;
     };
   };
