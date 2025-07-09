@@ -8,6 +8,7 @@
 
   # import other modules
   imports = [
+    ./modules/home-manager/cava.nix
     ./modules/home-manager/cli-tools.nix
     ./modules/home-manager/emacs.nix
     ./modules/home-manager/kitty.nix

@@ -140,6 +140,7 @@
     tor-browser
     spotify
     gcc
+    cava
   ];
 
   systemd.user.targets.graphical-session = {
