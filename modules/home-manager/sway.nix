@@ -34,7 +34,7 @@
       terminal = "kitty";
       gaps = {
         inner = 20;
-        outer = 10;
+        outer = 5;
       };
       modifier = "Mod4";
 
