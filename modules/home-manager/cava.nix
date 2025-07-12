@@ -9,9 +9,12 @@
       general = {
         framerate = 60;
         bars = 10;
-        bar_width = 8;
+        bar_width = 2;
+        lower_cutoff_freq = 30;
+        higher_cutoff_freq = 16000;
       };
       output = {
+        waveform = 0;
         channels = "mono";
         mono_option = "average";
       };
