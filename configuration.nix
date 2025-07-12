@@ -17,6 +17,7 @@
     ./modules/nixos/gnome.nix
     ./modules/nixos/stylix.nix
     ./modules/nixos/sway.nix
+    ./modules/nixos/virtualbox.nix
   ];
 
   # Bootloader.
@@ -141,6 +142,7 @@
     spotify
     gcc
     cava
+    ghostscript
   ];
 
   systemd.user.targets.graphical-session = {
