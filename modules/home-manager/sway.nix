@@ -160,4 +160,31 @@
     };
   };
 
+  services.mako = {
+    enable = true;
+    package = pkgs.mako;
+    settings = {
+
+      # actions
+      on-button-left  = "invoke-default-action";
+      on-button-right = "dismiss";
+      default-timeout = 5000; # milliseconds
+
+      # styling
+      font = lib.mkForce "Fira Sans 16";
+      height = 120;
+      width = 360;
+      border-size = 3;
+      max-icon-size = 75;
+
+      "urgency=low" = {
+        background-color = lib.mkForce "#${config.lib.stylix.colors.base00}FF";
+        border-color = lib.mkForce "#${config.lib.stylix.colors.base0D}";
+        text-color = lib.mkForce "#${config.lib.stylix.colors.base05}";
+      };
+
+
+    };
+  };
+
 }
