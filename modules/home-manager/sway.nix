@@ -102,6 +102,14 @@
       blur enable
       blur_passes 1
       blur_radius 5
+
+
+      # Clamshell mode management
+      set $laptop eDP-1
+      bindswitch --reload --locked lid:on output $laptop disable
+      bindswitch --reload --locked lid:off output $laptop enable
+
+      exec_always ~/scripts/sway/clamshell.sh
     '';
 
   };
@@ -138,24 +146,31 @@
   };
 
   home.file = {
+    # i3blocks
     "scripts/i3blocks/wifi.sh" = {
-    source = ./i3blocks_scripts/wifi.sh;
+    source = ./scripts/i3blocks/wifi.sh;
     executable = true;
     };
     "scripts/i3blocks/battery.sh" = {
-    source = ./i3blocks_scripts/battery.sh;
+    source = ./scripts/i3blocks/battery.sh;
     executable = true;
     };
     "scripts/i3blocks/datetime.sh" = {
-    source = ./i3blocks_scripts/datetime.sh;
+    source = ./scripts/i3blocks/datetime.sh;
     executable = true;
     };
     "scripts/i3blocks/volume.sh" = {
-    source = ./i3blocks_scripts/volume.sh;
+    source = ./scripts/i3blocks/volume.sh;
     executable = true;
     };
     "scripts/i3blocks/disk.sh" = {
-    source = ./i3blocks_scripts/disk.sh;
+    source = ./scripts/i3blocks/disk.sh;
+    executable = true;
+    };
+
+    # sway
+    "scripts/sway/clamshell.sh" = {
+    source = ./scripts/sway/clamshell.sh;
     executable = true;
     };
   };
