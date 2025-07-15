@@ -30,7 +30,7 @@
         "7119:5:USB_Optical_Mouse".left_handed = "enabled";
       };
 
-      menu = "wofi --show=drun --insensitive --parse-search";
+      menu = "rofi -show drun";
       terminal = "kitty";
       gaps = {
         inner = 20;

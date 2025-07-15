@@ -12,6 +12,7 @@
     ./modules/home-manager/cli-tools.nix
     ./modules/home-manager/emacs.nix
     ./modules/home-manager/kitty.nix
+    ./modules/home-manager/rofi.nix
     ./modules/home-manager/stylix.nix
     ./modules/home-manager/sway.nix
     ./modules/home-manager/zsh.nix
