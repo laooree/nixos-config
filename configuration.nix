@@ -143,6 +143,7 @@
     gcc
     cava
     ghostscript
+    bluetui
   ];
 
   systemd.user.targets.graphical-session = {
