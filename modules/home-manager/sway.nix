@@ -63,11 +63,19 @@
         let
           modifier = config.wayland.windowManager.sway.config.modifier;
         in lib.mkOptionDefault {
+
+          # Volume control
           "XF86AudioRaiseVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && pkill -RTMIN+10 i3blocks";
           "XF86AudioLowerVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+10 i3blocks";
           "XF86AudioMute"         = "exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+10 i3blocks";
+
+          # Brightness control
           "XF86MonBrightnessDown" = "exec --no-startup-id brightnessctl set 5%-";
           "XF86MonBrightnessUp"   = "exec --no-startup-id brightnessctl set +5%";
+
+          # Screenshot
+          "${modifier}+Shift+S" = ''exec grim -g "$(slurp -d)" - | wl-copy'';
+          "Print" = ''exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')'';
         };
 
       bars = [
