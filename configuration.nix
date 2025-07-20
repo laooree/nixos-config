@@ -144,6 +144,7 @@
     cava
     ghostscript
     bluetui
+    zip
   ];
 
   systemd.user.targets.graphical-session = {
