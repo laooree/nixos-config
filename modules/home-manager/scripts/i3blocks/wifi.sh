@@ -6,7 +6,7 @@ source "$HOME/.config/stylix/colors_env"
 wifi_info=$(nmcli -t -f ACTIVE,SSID,SIGNAL dev wifi | grep "^yes:")
 
 if [ -z "$wifi_info" ]; then
-  output="󰤮  Disconnected"
+  output="󰤮  Disconnected "
   color="${COLOR_BASE03}"
 else
   IFS=':' read -r _ ssid signal <<< "$wifi_info"
