@@ -41,12 +41,12 @@
       output = {
         "HDMI-A-1" = {
           # mode = "2560x1600@59.951Hz";
-          bg = "~/.dotfiles/images/wallpapers/nord_mountains.png fill";
+          bg = "~/.dotfiles/images/wallpapers/orchid.jpg fill";
         };
         "eDP-1" = {
           # scale = "1.2";
           mode = "2560x1600@60Hz";
-          bg = "~/.dotfiles/images/wallpapers/nord_mountains.png fill";
+          bg = "~/.dotfiles/images/wallpapers/orchid.jpg fill";
         };
       };
 
