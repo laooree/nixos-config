@@ -30,7 +30,8 @@
         "7119:5:USB_Optical_Mouse".left_handed = "enabled";
       };
 
-      menu = "rofi -show drun";
+      # menu = "rofi -show drun";
+      menu = " tofi-drun | xargs swaymsg exec --";
       terminal = "kitty";
       gaps = {
         inner = 20;
