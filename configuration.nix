@@ -69,6 +69,9 @@
     variant = "";
   };
 
+  # enable dconf
+  programs.dconf.enable = true;
+
   # Configure console keymap
   console.keyMap = "it2";
 
@@ -145,6 +148,7 @@
     ghostscript
     bluetui
     zip
+    easyeffects
   ];
 
   systemd.user.targets.graphical-session = {
