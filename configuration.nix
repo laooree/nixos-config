@@ -149,6 +149,8 @@
     bluetui
     zip
     easyeffects
+    vivaldi
+    sl
   ];
 
   systemd.user.targets.graphical-session = {
