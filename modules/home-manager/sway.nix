@@ -66,8 +66,8 @@
         in lib.mkOptionDefault {
 
           # Volume control
-          "XF86AudioRaiseVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && pkill -RTMIN+10 i3blocks";
-          "XF86AudioLowerVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+10 i3blocks";
+          "XF86AudioRaiseVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% && pkill -RTMIN+10 i3blocks";
+          "XF86AudioLowerVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2% && pkill -RTMIN+10 i3blocks";
           "XF86AudioMute"         = "exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+10 i3blocks";
 
           # Brightness control
@@ -75,34 +75,17 @@
           "XF86MonBrightnessUp"   = "exec --no-startup-id brightnessctl set +5%";
 
           # Screenshot
-          "${modifier}+Shift+S" = ''exec grim -g "$(slurp -d)" - | wl-copy'';
+          "${modifier}+Shift+s" = ''exec grim -g "$(slurp -d)" - | wl-copy'';
           "Print" = ''exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')'';
+
+          # Tofi run
+          "${modifier}+r" = ''exec --no-startup-id tofi-run | xargs swaymsg exec --'';
+          "${modifier}+Shift+r" = "mode resize";
         };
 
       bars = [
         {
-          command = "swaybar";
-          statusCommand = "i3blocks";
-          position = "bottom";
-          fonts = {
-            names = [ "Iosevka Nerd Font" ];
-            style = "Regular";
-            size = 16.0;
-          };
-          colors = {
-            background = "#${config.lib.stylix.colors.base00}";
-            focusedWorkspace = {
-              background = "#${config.lib.stylix.colors.base0D}";
-              border = "#${config.lib.stylix.colors.base0D}";
-              text = "#${config.lib.stylix.colors.base00}";
-            };
-            inactiveWorkspace = {
-              background = "#${config.lib.stylix.colors.base00}";
-              border = "#${config.lib.stylix.colors.base00}";
-              text = "#${config.lib.stylix.colors.base06}";
-            };
-            separator = "#${config.lib.stylix.colors.base06}";
-          };
+          command = "waybar";
         }
       ];
     };

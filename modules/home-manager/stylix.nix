@@ -10,6 +10,7 @@
     enable = true;
     targets = {
       emacs.enable = true;
+      waybar.enable = false;
     };
   };
 
