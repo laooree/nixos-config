@@ -18,10 +18,9 @@
 
       font-size = lib.mkForce 24;
 
-      background-color =            lib.mkForce "#${config.lib.stylix.colors.base00}BF";
+      background-color =            lib.mkForce "#${config.lib.stylix.colors.base00}EF";
 
       text-color =                  lib.mkForce "#${config.lib.stylix.colors.base05}";
-      text-background =             lib.mkForce "#00000000";
 
       input-color =                 lib.mkForce "#${config.lib.stylix.colors.base05}";
       input-background =            lib.mkForce "#00000000";
