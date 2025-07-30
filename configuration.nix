@@ -15,6 +15,7 @@
     ./modules/nixos/fonts.nix
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
+    ./modules/nixos/python.nix
     ./modules/nixos/stylix.nix
     ./modules/nixos/sway.nix
     ./modules/nixos/virtualbox.nix
@@ -133,12 +134,6 @@
     zoom-us
     libreoffice
     pcloud
-    (python313.withPackages (python-pkgs: with python-pkgs; [
-      numpy
-
-      # needed for get-eduroam.py
-      dbus-python
-    ]))
     texliveFull
     inkscape-with-extensions
     tor-browser
@@ -148,9 +143,11 @@
     ghostscript
     bluetui
     zip
+    obs-studio
     easyeffects
     vivaldi
     sl
+    vlc
   ];
 
   systemd.user.targets.graphical-session = {
