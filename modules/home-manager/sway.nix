@@ -102,6 +102,7 @@
       bindswitch --reload --locked lid:off output $laptop enable
 
       exec_always ~/scripts/sway/clamshell.sh
+      exec_always pactl set-source-volume alsa_input.pci-0000_03_00.6.analog-stereo 40%
     '';
 
   };
