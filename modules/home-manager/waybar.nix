@@ -25,8 +25,11 @@
           "sway/window"
           "custom/left-light"
         ];
+
         modules-center = [
+          "privacy"
         ];
+
         modules-right = [
           "custom/right-light"
           "network"
@@ -42,6 +45,9 @@
           "custom/right-dark"
           "custom/right-light"
           "disk"
+          "custom/right-dark"
+          "custom/right-light"
+          "tray"
           "custom/right-dark"
           "custom/clock-separator"
           "clock"
@@ -62,6 +68,7 @@
         "sway/window" = {
           format = "{}";
           rewrite = {
+
             # Window Manager
             "" = " <span foreground='#afa137'> </span>   Sway ";
 
@@ -89,6 +96,9 @@
             "(.*)Bageegee(.*)" = " <span foreground='#ff4444'> </span>  Beebee ";
             "Ciorcio(.*)" = " <span foreground='#ff4444'> </span>  Beebee ";
 
+            # games
+            "PokeMMO(.*)" = " 󰐝   PokeMMO ";
+
           };
         };
 
@@ -106,6 +116,7 @@
 
         "network" = {
           interval = 5;
+          format = " 󰈁 {ifname} ";
           format-ethernet = " 󰈁 {ifname} ";
           format-wifi = "    ({signalStrength}%) {essid} ";
           format-disconnected = "󰲛 ";
@@ -201,10 +212,19 @@
         font-size: 20px;
       }
 
+      #tray {
+        background: #${config.lib.stylix.colors.base02};
+      }
+
       #clock {
         color: #${config.lib.stylix.colors.base00};
         background: #${config.lib.stylix.colors.base0D};
         font-size: 20px;
+      }
+
+      #privacy {
+        color: #${config.lib.stylix.colors.base00};
+        background: #${config.lib.stylix.colors.base08};
       }
 
       #custom-left-dark,
