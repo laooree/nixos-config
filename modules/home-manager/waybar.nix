@@ -136,6 +136,11 @@
           scroll-step = 2;
         };
 
+        "tray" = {
+          icon-size = 20;
+          spacing = 10;
+        };
+
         "clock" = {
           format = " 󰸗   {:%B %d, %H:%M}  ";
           tooltip = true;
