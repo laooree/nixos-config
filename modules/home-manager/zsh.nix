@@ -13,12 +13,11 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      ll = "ls -l";
+      la = "ls -a";
+      ll = "ls -la";
       vi = "nvim";
       vim = "nvim";
       nix-test = "sudo nixos-rebuild test --flake .";
-      gs = "git status";
-      ga = "git add";
       e = ''emacsclient --no-window --alternate-editor=""'';
     };
 
@@ -62,6 +61,24 @@
       # Register the hook
       autoload -Uz add-zsh-hook
       add-zsh-hook precmd newline_before_prompt
+
+
+      gs-pdf-compress() {
+        if [[ $# -ne 2 ]]; then
+          echo "Usage: gs-pdf-compress input.pdf output.pdf"
+          return 1
+        fi
+
+        local input="$1"
+        local output="$2"
+
+        gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 \
+           -dDownsampleColorImages=false \
+           -dDownsampleGrayImages=false \
+           -dDownsampleMonoImages=false \
+           -dNOPAUSE -dBATCH \
+           -sOutputFile="$output" "$input"
+      }
     '';
 
   };
