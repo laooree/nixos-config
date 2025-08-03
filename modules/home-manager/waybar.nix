@@ -8,9 +8,9 @@
 
 
     settings = {
-      mainBar = {
+      topBar = {
         layer = "top";
-        position = "bottom";
+        position = "top";
         height = 30;
         output = [
           "eDP-1"
@@ -189,7 +189,36 @@
           format = "";
           tooltip = false;
         };
+      };
 
+      bottomBar = {
+        layer = "top";
+        position = "bottom";
+        height = 30;
+        output = [
+          "eDP-1"
+          "HDMI-A-1"
+        ];
+
+        modules-center = [
+          "wlr/taskbar"
+        ];
+
+        "wlr/taskbar" = {
+          format = "{icon} {app_id}";
+          icon-size = 24;
+          on-click = "activate";
+        };
+
+	      "custom/left" = {
+		      format = "";
+		      tooltip = false;
+	      };
+
+	      "custom/right" = {
+		      format = "";
+		      tooltip = false;
+	      };
       };
     };
 
@@ -277,6 +306,11 @@
         border-radius: 0px;
         font-size: 26px;
       }
+
+      #wlr-taskbar {
+        background: #${config.lib.stylix.colors.base02};
+      }
+
     '';
 
   };
