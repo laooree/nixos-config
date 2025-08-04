@@ -148,6 +148,7 @@
     vivaldi
     sl
     vlc
+    librewolf
   ];
 
   systemd.user.targets.graphical-session = {

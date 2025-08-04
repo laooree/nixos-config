@@ -81,6 +81,9 @@
           # Tofi run
           "${modifier}+r" = ''exec --no-startup-id tofi-run | xargs swaymsg exec --'';
           "${modifier}+Shift+r" = "mode resize";
+
+          # Browser
+          "${modifier}+b" = ''exec --no-startup-id librewolf'';
         };
 
       bars = [
