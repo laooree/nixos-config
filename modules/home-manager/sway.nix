@@ -108,9 +108,6 @@
       # Always set mic volume to 35%
       exec_always pactl set-source-volume alsa_input.pci-0000_03_00.6.analog-stereo 35%
 
-      # Remap new keyboards on sway config reload
-      exec_always systemctl --user restart xremap.service
-
       # Start pcloud on system start
       exec pcloud
     '';
