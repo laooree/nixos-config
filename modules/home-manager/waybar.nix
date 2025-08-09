@@ -78,7 +78,10 @@
 
             # Browser
             "(.*)Mozilla Firefox" = " <span foreground='#ff721f'>󰈹 </span>  Firefox ";
+            "(.*)Mozilla Firefox Private Browsing" = " <span foreground='#ff721f'>󰈹 </span>  Firefox (Incognito)";
             "(.*)Vivaldi" = " <span foreground='#ef3939'>󰖟 </span>  Vivaldi ";
+            "(.*)Librewolf" = " <span foreground='#00acff'>󰖟 </span>  Librewolf ";
+            "(.*)Librewolf Private Browsing" = " <span foreground='#00acff'>󰖟 </span>  Librewolf (Incognito)";
 
             # Emacs
             "Gnu Emacs" = " <span foreground='#837bc3'> </span>  Emacs ";
