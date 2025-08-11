@@ -94,11 +94,6 @@
     };
 
     extraConfig = ''
-      blur enable
-      blur_passes 1
-      blur_radius 5
-
-
       # Clamshell mode management
       set $laptop eDP-1
       bindswitch --reload --locked lid:on output $laptop disable
