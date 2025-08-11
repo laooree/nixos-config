@@ -4,7 +4,7 @@
 
   wayland.windowManager.sway = {
     enable = true;
-    package = pkgs.swayfx;
+    package = pkgs.sway;
     checkConfig = false;
 
     xwayland = true;
@@ -12,11 +12,11 @@
     config = {
 
       colors.focused = {
-        background = lib.mkForce "#${config.lib.stylix.colors.base00}";
-        border = lib.mkForce "#${config.lib.stylix.colors.base0D}";
-        childBorder = lib.mkForce "#${config.lib.stylix.colors.base0D}";
-        indicator = lib.mkForce "#${config.lib.stylix.colors.base0D}";
-        text = lib.mkForce "#${config.lib.stylix.colors.base06}";
+        background =  "#151515";
+        border =      "#5f875f";
+        childBorder = "#5f875f";
+        indicator =   "#5f875f";
+        text =        "#c2c2b0";
       };
       input = {
         "type:keyboard" = {
@@ -66,9 +66,9 @@
         in lib.mkOptionDefault {
 
           # Volume control
-          "XF86AudioRaiseVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% && pkill -RTMIN+10 i3blocks";
-          "XF86AudioLowerVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2% && pkill -RTMIN+10 i3blocks";
-          "XF86AudioMute"         = "exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+10 i3blocks";
+          "XF86AudioRaiseVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%";
+          "XF86AudioLowerVolume"  = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%";
+          "XF86AudioMute"         = "exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle";
 
           # Brightness control
           "XF86MonBrightnessDown" = "exec --no-startup-id brightnessctl set 5%-";
@@ -115,59 +115,7 @@
   };
 
 
-  programs.i3blocks = {
-    enable = true;
-    bars =
-      {
-        config = {
-          wifi = {
-            command = "${config.home.homeDirectory}/scripts/i3blocks/wifi.sh";
-            interval = 5;
-          };
-          volume = lib.hm.dag.entryAfter [ "wifi" ] {
-            command = "${config.home.homeDirectory}/scripts/i3blocks/volume.sh";
-            interval = 5;
-            signal = 10;
-          };
-          battery = lib.hm.dag.entryAfter [ "volume" ] {
-            command = "${config.home.homeDirectory}/scripts/i3blocks/battery.sh";
-            interval = 5;
-          };
-          disk = lib.hm.dag.entryAfter [ "battery" ] {
-            command = "${config.home.homeDirectory}/scripts/i3blocks/disk.sh";
-            interval = 5;
-          };
-          datetime = lib.hm.dag.entryAfter [ "disk" ] {
-            command = "${config.home.homeDirectory}/scripts/i3blocks/datetime.sh";
-            interval = 5;
-          };
-        };
-      };
-  };
-
   home.file = {
-    # i3blocks
-    "scripts/i3blocks/wifi.sh" = {
-    source = ./scripts/i3blocks/wifi.sh;
-    executable = true;
-    };
-    "scripts/i3blocks/battery.sh" = {
-    source = ./scripts/i3blocks/battery.sh;
-    executable = true;
-    };
-    "scripts/i3blocks/datetime.sh" = {
-    source = ./scripts/i3blocks/datetime.sh;
-    executable = true;
-    };
-    "scripts/i3blocks/volume.sh" = {
-    source = ./scripts/i3blocks/volume.sh;
-    executable = true;
-    };
-    "scripts/i3blocks/disk.sh" = {
-    source = ./scripts/i3blocks/disk.sh;
-    executable = true;
-    };
-
     # sway
     "scripts/sway/clamshell.sh" = {
     source = ./scripts/sway/clamshell.sh;
@@ -193,9 +141,9 @@
       max-icon-size = 75;
 
       "urgency=low" = {
-        background-color = lib.mkForce "#${config.lib.stylix.colors.base00}FF";
-        border-color = lib.mkForce "#${config.lib.stylix.colors.base0D}";
-        text-color = lib.mkForce "#${config.lib.stylix.colors.base05}";
+        background-color = "#151515ff";
+        border-color =     "#5f875f";
+        text-color =       "#c2c2b0";
       };
 
 

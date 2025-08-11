@@ -20,14 +20,13 @@
       nix-test = "sudo nixos-rebuild test --flake .";
       e = ''emacsclient --no-window --alternate-editor=""'';
     };
-
     history.size = 10000;
     history.ignoreAllDups = true;
     history.path = "$HOME/.zsh_history";
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
 
     initContent = ''
-      PROMPT="%F{#7ebae4} %F{#${config.lib.stylix.colors.base0B}} %n in %~"$'\n'"%f%k  "
+      PROMPT="%F{#335533}%n in %~"$'\n'"%f%k "
 
       zstyle ':completion:*' menu select # tab opens cmp menu
       # zstyle ':completion:*' special-dirs true # force . and .. to show in cmp menu

@@ -10,6 +10,7 @@
   fonts.fontconfig.enable = true;
 
   fonts.packages = with pkgs; [
+    fira-sans
     libertinus
     nerd-fonts.fira-mono
     nerd-fonts.iosevka

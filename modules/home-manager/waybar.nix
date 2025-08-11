@@ -18,9 +18,9 @@
         ];
         modules-left = [
           "custom/nixos-logo"
-          "custom/left-dark"
+          "custom/workspace-separator-left"
           "sway/workspaces"
-          "custom/left-light"
+          "custom/workspace-separator-right"
           "custom/left-dark"
           "sway/window"
           "custom/left-light"
@@ -204,7 +204,9 @@
         ];
 
         modules-center = [
+          "custom/left"
           "wlr/taskbar"
+          "custom/right"
         ];
 
         "wlr/taskbar" = {
@@ -230,7 +232,14 @@
     style = ''
 
       * {
-        font-family: "FiraSans", "Iosevka Nerd Font";
+        border: none;
+        border-radius: 0;
+        font-family: "Fira Sans", "Iosevka Nerd Font";
+      }
+
+      window#waybar {
+        background: #151515;
+        color: #c2c2b0;
       }
 
       #network,
@@ -238,80 +247,102 @@
       #battery,
       #backlight,
       #disk {
-        color: #${config.lib.stylix.colors.base05};
-        background: #${config.lib.stylix.colors.base02};
+        color: #c2c2b0;
+        background: #222222;
         font-size: 20px;
       }
 
       #window {
-        color: #${config.lib.stylix.colors.base05};
-        background: #${config.lib.stylix.colors.base02};
+        color: #c2c2b0;
+        background: #222222;
         font-size: 20px;
       }
 
       #tray {
-        background: #${config.lib.stylix.colors.base02};
+        background: #222222;
       }
 
       #clock {
-        color: #${config.lib.stylix.colors.base00};
-        background: #${config.lib.stylix.colors.base0D};
+        color: #151515;
+        background: #5f875f;
         font-size: 20px;
       }
 
       #privacy {
-        color: #${config.lib.stylix.colors.base00};
-        background: #${config.lib.stylix.colors.base08};
+        color: #222222;
+        background: #fd9720;
       }
 
       #custom-left-dark,
       #custom-right-dark {
         font-size: 30px;
-        color: #${config.lib.stylix.colors.base00};
-        background: #${config.lib.stylix.colors.base02};
+        color: #151515;
+        background: #222222;
       }
 
       #custom-left-light,
       #custom-right-light {
         font-size: 30px;
-        color:#${config.lib.stylix.colors.base02};
+        color:#222222;
       }
 
       #custom-clock-separator {
         font-size: 30px;
-        color:#${config.lib.stylix.colors.base0D};
+        color:#5f875f;
       }
 
       #custom-workspace-separator-left,
       #custom-workspace-separator-right {
         font-size: 30px;
-        color:#${config.lib.stylix.colors.base02};
+        color: #242d1d;
       }
 
       #custom-nixos-logo {
-        color: #${config.lib.stylix.colors.base00};
-        background: #${config.lib.stylix.colors.base0D};
+        color: #151515;
+        background: #5f875f;
         font-size: 30px;
       }
 
       #workspaces button {
         padding: 0 0px;
-        color: #${config.lib.stylix.colors.base05};
-        background: #${config.lib.stylix.colors.base02};
+        color: #c2c2b0;
+        background: #242d1d;
         border-radius: 0px;
         font-size: 20px;
+        font-weight: 700;
       }
 
       #workspaces button.focused {
         padding: 0 0px;
-        color: #${config.lib.stylix.colors.base0D};
-        background: #${config.lib.stylix.colors.base02};
+        color: #c9a554;
+        background: #242d1d;
         border-radius: 0px;
         font-size: 26px;
       }
 
-      #wlr-taskbar {
-        background: #${config.lib.stylix.colors.base02};
+      #taskbar {
+        color: #c2c2b0;
+        background: #242d1d;
+        font-size: 20px;
+        padding: 0 10px;
+      }
+
+      #taskbar button {
+        color: #c2c2b0;
+        padding: 0 10px;
+      }
+
+      #taskbar button.active {
+        color: #c9a554;
+        padding: 0 10px;
+        font-weight: 700;
+      }
+
+      #custom-left,
+      #custom-right {
+        color: #242d1d;
+        background: #151515;
+        font-size: 30px;
       }
 
     '';

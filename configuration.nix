@@ -16,7 +16,6 @@
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
     ./modules/nixos/python.nix
-    ./modules/nixos/stylix.nix
     ./modules/nixos/sway.nix
     ./modules/nixos/virtualbox.nix
   ];
