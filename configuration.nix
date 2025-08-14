@@ -123,32 +123,33 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    discord
-    git
-    kitty
-    neovim
-    pokemmo-installer
-    telegram-desktop
-    xremap
-    zoom-us
-    libreoffice
-    pcloud
-    texliveFull
-    inkscape-with-extensions
-    tor-browser
-    spotify
-    gcc
-    cava
-    ghostscript
     bluetui
-    zip
-    obs-studio
+    cava
+    discord
     easyeffects
-    vivaldi
-    sl
-    vlc
-    librewolf
+    epy
+    gcc
+    ghostscript
+    git
+    inkscape-with-extensions
     keyd
+    kitty
+    libreoffice
+    librewolf
+    neovim
+    obs-studio
+    pcloud
+    pokemmo-installer
+    sl
+    spotify
+    telegram-desktop
+    texliveFull
+    tor-browser
+    vivaldi
+    vlc
+    xremap
+    zip
+    zoom-us
   ];
 
   systemd.user.targets.graphical-session = {
