@@ -105,6 +105,9 @@
 
       # Start pcloud on system start
       exec pcloud
+
+      # Start pcloud on system start
+      exec mullvad-gui
     '';
 
   };
