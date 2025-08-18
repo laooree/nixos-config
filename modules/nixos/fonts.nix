@@ -10,6 +10,8 @@
   fonts.fontconfig.enable = true;
 
   fonts.packages = with pkgs; [
+    cm_unicode
+    dinish
     fira-sans
     libertinus
     nerd-fonts.fira-mono

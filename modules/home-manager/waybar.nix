@@ -234,7 +234,7 @@
       * {
         border: none;
         border-radius: 0;
-        font-family: "Fira Sans", "Iosevka Nerd Font";
+        font-family: "DINish", "Iosevka Nerd Font";
       }
 
       window#waybar {
@@ -249,13 +249,13 @@
       #disk {
         color: #c2c2b0;
         background: #222222;
-        font-size: 20px;
+        font-size: 22px;
       }
 
       #window {
         color: #c2c2b0;
         background: #222222;
-        font-size: 20px;
+        font-size: 22px;
       }
 
       #tray {
@@ -265,7 +265,7 @@
       #clock {
         color: #151515;
         background: #5f875f;
-        font-size: 20px;
+        font-size: 22px;
       }
 
       #privacy {
@@ -308,7 +308,7 @@
         color: #c2c2b0;
         background: #242d1d;
         border-radius: 0px;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 700;
       }
 
@@ -323,7 +323,7 @@
       #taskbar {
         color: #c2c2b0;
         background: #242d1d;
-        font-size: 20px;
+        font-size: 22px;
         padding: 0 10px;
       }
 

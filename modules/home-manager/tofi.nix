@@ -17,7 +17,7 @@
       num-results = 5;
 
       font-size = 24;
-      font = "Fira Sans";
+      font = "DINish";
 
       background-color =            lib.mkForce "#222222EF";
 
