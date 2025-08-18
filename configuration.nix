@@ -15,7 +15,7 @@
     ./modules/nixos/fonts.nix
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
-    ./modules/nixos/python.nix
+    ./modules/nixos/programming-languages.nix
     ./modules/nixos/sway.nix
     ./modules/nixos/virtualbox.nix
   ];
