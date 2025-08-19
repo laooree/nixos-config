@@ -1,0 +1,76 @@
+#+TITLE: Startpage
+#+OPTIONS: toc:nil num:nil author:nil date:nil
+#+OPTIONS: html-postamble:nil
+#+HTML_DOCTYPE: html5
+#+HTML_HEAD: <style>
+#+HTML_HEAD: body {
+#+HTML_HEAD:   font-family: 'DINish', 'Iosevka Nerd Font', sans-serif;
+#+HTML_HEAD:   font-size: 20px;
+#+HTML_HEAD:   background-color: #222222;
+#+HTML_HEAD:   color: #c2c2b0;
+#+HTML_HEAD:   margin: 2em;
+#+HTML_HEAD: }
+#+HTML_HEAD: h1.title { display: none; } /* hide the big title */
+#+HTML_HEAD: .category {
+#+HTML_HEAD:   background: #242d1d;
+#+HTML_HEAD:   border-radius: 1em;
+#+HTML_HEAD:   padding: 1em 2em;
+#+HTML_HEAD:   margin: 1em;
+#+HTML_HEAD:   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+#+HTML_HEAD:   flex: 0 0 auto;
+#+HTML_HEAD:   width: fit-content;
+#+HTML_HEAD:   min-width: 200px;
+#+HTML_HEAD: }
+#+HTML_HEAD: .category h2 {
+#+HTML_HEAD:   margin-top: 0;
+#+HTML_HEAD:   color: #5f875f;
+#+HTML_HEAD:   font-size: 1.2em;
+#+HTML_HEAD:   border-bottom: 1px solid #242d1d;
+#+HTML_HEAD:   padding-bottom: 0.3em;
+#+HTML_HEAD: }
+#+HTML_HEAD: .category a {
+#+HTML_HEAD:   display: block;
+#+HTML_HEAD:   margin: 0.5em 0;
+#+HTML_HEAD:   color: #c9a554;
+#+HTML_HEAD:   text-decoration: none;
+#+HTML_HEAD: }
+#+HTML_HEAD: .category a:hover {
+#+HTML_HEAD:   text-decoration: underline;
+#+HTML_HEAD: }
+#+HTML_HEAD: #content {
+#+HTML_HEAD:   display: flex;
+#+HTML_HEAD:   flex-wrap: wrap;
+#+HTML_HEAD:   gap: 1em;
+#+HTML_HEAD:   justify-content: center;
+#+HTML_HEAD: }
+#+HTML_HEAD: </style>
+#+HTML_HEAD: <script>
+#+HTML_HEAD: document.addEventListener("DOMContentLoaded", function() {
+#+HTML_HEAD:   const mapping = {};
+#+HTML_HEAD:   document.querySelectorAll("a").forEach(link => {
+#+HTML_HEAD:     const match = link.textContent.match(/\( (.) \)/);
+#+HTML_HEAD:     if (match) {
+#+HTML_HEAD:       mapping[match[1]] = link.href;
+#+HTML_HEAD:     }
+#+HTML_HEAD:   });
+#+HTML_HEAD:   document.addEventListener("keydown", function(e) {
+#+HTML_HEAD:     if (e.key in mapping) {
+#+HTML_HEAD:       window.location.href = mapping[e.key];
+#+HTML_HEAD:     }
+#+HTML_HEAD:   });
+#+HTML_HEAD: });
+#+HTML_HEAD: </script>
+
+* Messaging
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: category
+:END:
+[[https://mail.google.com][( g ) Gmail]]
+[[https://web.whatsapp.com][( w ) Whatsapp]]
+
+* Entertainment
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: category
+:END:
+[[https://youtube.com][( y ) YouTube]]
+[[https://netflix.com][( n ) Netflix]]
