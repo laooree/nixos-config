@@ -132,7 +132,7 @@
       default-timeout = 5000; # milliseconds
 
       # styling
-      font = lib.mkForce "DINish 18";
+      font = lib.mkForce "DINish 16";
       height = 120;
       width = 360;
       border-size = 3;
