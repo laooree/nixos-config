@@ -130,6 +130,7 @@
     epy
     gcc
     ghostscript
+    gimp
     git
     inkscape-with-extensions
     keyd
