@@ -83,7 +83,7 @@
           "${modifier}+Shift+r" = "mode resize";
 
           # Browser
-          "${modifier}+b" = ''exec --no-startup-id librewolf'';
+          "${modifier}+b" = ''exec --no-startup-id vivaldi'';
         };
 
       bars = [
