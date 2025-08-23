@@ -9,13 +9,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # stylix = {
-    #   url = "github:danth/stylix";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, stylix, ... }@inputs:
     {
     nixosConfigurations.sigma = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -23,7 +23,7 @@
       modules = [
         ./configuration.nix
         inputs.home-manager.nixosModules.default
-        # inputs.stylix.nixosModules.stylix
+        inputs.stylix.nixosModules.stylix
       ];
     };
   };

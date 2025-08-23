@@ -132,17 +132,15 @@
       default-timeout = 5000; # milliseconds
 
       # styling
-      font = lib.mkForce "DINish 16";
+      font = lib.mkForce "DINish 18";
       height = 120;
       width = 360;
       border-size = 3;
       max-icon-size = 75;
 
-      "urgency=low" = {
-        background-color = "#151515ff";
-        border-color =     "#5f875f";
-        text-color =       "#c2c2b0";
-      };
+      background-color = "#151515ff";
+      border-color =     "#5f875f";
+      text-color =       "#c2c2b0";
 
 
     };
