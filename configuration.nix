@@ -128,6 +128,7 @@
     discord
     easyeffects
     epy
+    fzf
     gcc
     ghostscript
     gimp
@@ -144,7 +145,7 @@
     sl
     spotify
     telegram-desktop
-    texliveFull
+    texliveFull texlab # latex + lsp
     tor-browser
     vivaldi
     vlc

@@ -14,11 +14,12 @@
     dinish
     fira-sans
     libertinus
+    libertine
     nerd-fonts.fira-mono
+    nerd-fonts.fira-code
     nerd-fonts.iosevka
     nerd-fonts.recursive-mono
     nerd-fonts.symbols-only
-    nerd-fonts.zed-mono
     noto-fonts-color-emoji
   ];
 }
