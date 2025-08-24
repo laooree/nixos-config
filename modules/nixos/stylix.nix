@@ -22,14 +22,14 @@
       base05 = "#c2c2b0";
       base06 = "#eaeaea";
       base07 = "#5f875f";
-      base08 = "#78834b";
-      base09 = "#1f3a57";
-      base0A = "#87ceeb";
-      base0B = "#824040";
-      base0C = "#c86448";
-      base0D = "#c9a554";
-      base0E = "#335533";
-      base0F = "#bb7744";
+      base08 = "#824040";
+      base09 = "#bb7744";
+      base0A = "#c9a554";
+      base0B = "#5f875f";
+      base0C = "#78834b";
+      base0D = "#87ceeb";
+      base0E = "#c86448";
+      base0F = "#b36d43";
     };
 
     cursor = {

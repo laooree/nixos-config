@@ -14,6 +14,7 @@
     ./modules/home-manager/emacs.nix
     ./modules/home-manager/kitty.nix
     ./modules/home-manager/tofi.nix
+    ./modules/home-manager/stylix.nix
     ./modules/home-manager/sway.nix
     ./modules/home-manager/waybar.nix
     ./modules/home-manager/zsh.nix
