@@ -61,12 +61,20 @@
 #+HTML_HEAD: });
 #+HTML_HEAD: </script>
 
+* Search
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: category
+:END:
+[[https://www.startpage.com/][( s ) Startpage]]
+[[https://www.google.com/][( G ) Google]]
+
 * Messaging
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: category
 :END:
 [[https://mail.google.com][( g ) Gmail]]
 [[https://web.whatsapp.com][( w ) Whatsapp]]
+
 
 * Entertainment
 :PROPERTIES:

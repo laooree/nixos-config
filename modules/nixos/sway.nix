@@ -7,13 +7,12 @@
     slurp # screenshot
     wl-clipboard # clipboard manager
     mako # notification
-    wofi # launcher
     brightnessctl # brightness control
     swaybg # background utility
     i3blocks # status utility
   ];
 
-  # Enable the gnome-keyring secrets vault. 
+  # Enable the gnome-keyring secrets vault.
   # Will be exposed through DBus to programs willing to store secrets.
   services.gnome.gnome-keyring.enable = true;
 
@@ -21,7 +20,7 @@
   programs.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
-    package = pkgs.swayfx;
+    package = pkgs.sway;
   };
 
 }
