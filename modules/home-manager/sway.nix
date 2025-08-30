@@ -85,6 +85,10 @@
           # Browser
           "${modifier}+b" = ''exec --no-startup-id vivaldi'';
 
+          # Split
+          "${modifier}+v" = "splitv";
+          "${modifier}+h" = "splith";
+
           # Rofi
           "${modifier}+r" = "exec --no-startup-id rofi -show run -config ~/.config/rofi/themes/launcher.rasi";
           "${modifier}+Shift+e" = "exec ~/scripts/waybar/powermenu.sh";
