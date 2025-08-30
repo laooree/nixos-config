@@ -149,6 +149,7 @@
     ghostscript
     gimp
     git
+    imagemagick
     inkscape-with-extensions
     keyd
     kitty
@@ -158,6 +159,7 @@
     obs-studio
     pcloud
     pokemmo-installer
+    pokemon-colorscripts
     sl
     spotify
     telegram-desktop
