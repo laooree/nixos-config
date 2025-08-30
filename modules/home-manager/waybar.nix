@@ -18,12 +18,13 @@
         ];
         modules-left = [
           "custom/nixos-logo"
-          "custom/workspace-separator-left"
+          "custom/sep-hl-4"
+          "custom/sep-ws-2"
           "sway/workspaces"
-          "custom/workspace-separator-right"
-          "custom/left-dark"
+          "custom/sep-ws-4"
+          "custom/sep-bg-2"
           "sway/window"
-          "custom/left-light"
+          "custom/sep-bg-4"
         ];
 
         modules-center = [
@@ -31,26 +32,26 @@
         ];
 
         modules-right = [
-          "custom/right-light"
+          "custom/sep-bg-3"
           "network"
-          "custom/right-dark"
-          "custom/right-light"
+          "custom/sep-bg-1"
+          "custom/sep-bg-3"
           "pulseaudio"
-          "custom/right-dark"
-          "custom/right-light"
+          "custom/sep-bg-1"
+          "custom/sep-bg-3"
           "battery"
-          "custom/right-dark"
-          "custom/right-light"
+          "custom/sep-bg-1"
+          "custom/sep-bg-3"
           "backlight"
-          "custom/right-dark"
-          "custom/right-light"
-          "disk"
-          "custom/right-dark"
-          "custom/right-light"
+          "custom/sep-bg-1"
+          "custom/sep-bg-3"
           "tray"
-          "custom/right-dark"
-          "custom/clock-separator"
+          "custom/sep-bg-1"
+          "custom/sep-hl-3"
           "clock"
+          "custom/sep-hl-1"
+          "custom/sep-pwb-3"
+          "custom/powermenu"
         ];
 
         "sway/workspaces" = {
@@ -78,10 +79,10 @@
 
             # Browser
             "(.*)Mozilla Firefox" = " <span foreground='#ff721f'>󰈹 </span>  Firefox ";
-            "(.*)Mozilla Firefox Private Browsing" = " <span foreground='#ff721f'>󰈹 </span>  Firefox (Incognito)";
+            "(.*)Mozilla Firefox Private Browsing" = " <span foreground='#ff721f'>󰈹 </span>  Firefox (Incognito) ";
             "(.*)Vivaldi" = " <span foreground='#ef3939'>󰖟 </span>  Vivaldi ";
             "(.*)Librewolf" = " <span foreground='#00acff'>󰖟 </span>  Librewolf ";
-            "(.*)Librewolf Private Browsing" = " <span foreground='#00acff'>󰖟 </span>  Librewolf (Incognito)";
+            "(.*)Librewolf Private Browsing" = " <span foreground='#00acff'>󰖟 </span>  Librewolf (Incognito) ";
 
             # Emacs
             "Gnu Emacs" = " <span foreground='#837bc3'> </span>  Emacs ";
@@ -151,47 +152,74 @@
           locale = "it_IT.UTF-8";
         };
 
-	      "custom/right-dark" = {
-		      format = "";
-		      tooltip = false;
-	      };
-
-	      "custom/right-light" = {
-		      format = "";
-		      tooltip = false;
-	      };
-
-	      "custom/left-dark" = {
-		      format = "";
-		      tooltip = false;
-	      };
-
-	      "custom/left-light" = {
-		      format = "";
+	      "custom/separator" = {
+		      format = "  ";
 		      tooltip = false;
 	      };
 
 	      "custom/nixos-logo" = {
-		      format = "   ";
+		      format = "   ";
 		      tooltip = true;
           tooltip-format = "NixOS Unstable";
           on-click = "kitty --title 'System Specs' bash -c 'fastfetch; exec bash'";
 	      };
 
-	      "custom/workspace-separator-left" = {
-		      format = "";
-		      tooltip = false;
-	      };
+        "custom/powermenu" = {
+          format = "   ";
+          tooltip = false;
+          on-click = "~/scripts/waybar/powermenu.sh";
+        };
 
-	      "custom/workspace-separator-right" = {
-		      format = "";
-		      tooltip = false;
-	      };
+        "custom/sep-bg-1" = {
+          format = "";
+          tooltip = false;
+        };
 
-        "custom/clock-separator" = {
+        "custom/sep-bg-2" = {
+          format = "";
+          tooltip = false;
+        };
+
+        "custom/sep-bg-3" = {
           format = "";
           tooltip = false;
         };
+
+        "custom/sep-bg-4" = {
+          format = "";
+          tooltip = false;
+        };
+
+        "custom/sep-hl-1" = {
+          format = "";
+          tooltip = false;
+        };
+
+        "custom/sep-hl-3" = {
+          format = "";
+          tooltip = false;
+        };
+
+        "custom/sep-hl-4" = {
+          format = "";
+          tooltip = false;
+        };
+
+        "custom/sep-pwb-3" = {
+          format = "";
+          tooltip = false;
+        };
+
+        "custom/sep-ws-2" = {
+          format = "";
+          tooltip = false;
+        };
+
+        "custom/sep-ws-4" = {
+          format = "";
+          tooltip = false;
+        };
+
       };
 
       bottomBar = {
@@ -204,9 +232,7 @@
         ];
 
         modules-center = [
-          "custom/left"
           "wlr/taskbar"
-          "custom/right"
         ];
 
         "wlr/taskbar" = {
@@ -215,15 +241,6 @@
           on-click = "activate";
         };
 
-	      "custom/left" = {
-		      format = "";
-		      tooltip = false;
-	      };
-
-	      "custom/right" = {
-		      format = "";
-		      tooltip = false;
-	      };
       };
     };
 
@@ -273,28 +290,10 @@
         background: #fd9720;
       }
 
-      #custom-left-dark,
-      #custom-right-dark {
+      #custom-separator {
         font-size: 30px;
         color: #151515;
-        background: #222222;
-      }
-
-      #custom-left-light,
-      #custom-right-light {
-        font-size: 30px;
-        color:#222222;
-      }
-
-      #custom-clock-separator {
-        font-size: 30px;
-        color:#5f875f;
-      }
-
-      #custom-workspace-separator-left,
-      #custom-workspace-separator-right {
-        font-size: 30px;
-        color: #242d1d;
+        background: #151515;
       }
 
       #custom-nixos-logo {
@@ -320,9 +319,15 @@
         font-size: 26px;
       }
 
+      #custom-powermenu {
+        color: #c2c2b0;
+        background: #824040;
+        font-size: 22px;
+      }
+
       #taskbar {
         color: #c2c2b0;
-        background: #242d1d;
+        background: #151515;
         font-size: 22px;
         padding: 0 10px;
       }
@@ -338,15 +343,45 @@
         font-weight: 700;
       }
 
-      #custom-left,
-      #custom-right {
-        color: #242d1d;
+      #custom-sep-bg-1,
+      #custom-sep-bg-2,
+      #custom-sep-bg-3,
+      #custom-sep-bg-4 {
+        color: #222222;
         background: #151515;
+        font-size: 30px;
+      }
+
+      #custom-sep-hl-1,
+      #custom-sep-hl-3,
+      #custom-sep-hl-4 {
+        background: #151515;
+        color: #5f875f;
+        font-size: 30px;
+      }
+
+      #custom-sep-ws-2,
+      #custom-sep-ws-4 {
+        background: #151515;
+        color: #242d1d;
+        font-size: 30px;
+      }
+
+      #custom-sep-pwb-3 {
+        background: #151515;
+        color: #824040;
         font-size: 30px;
       }
 
     '';
 
+  };
+
+  home.file = {
+    "scripts/waybar/powermenu.sh" = {
+      source = ./scripts/waybar/powermenu.sh;
+      executable = true;
+    };
   };
 
 }

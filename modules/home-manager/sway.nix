@@ -32,7 +32,7 @@
         "7119:5:USB_Optical_Mouse".left_handed = "enabled";
       };
 
-      menu = "rofi -show drun -config ~/.dotfiles/modules/home-manager/rofi/launcher.rasi";
+      menu = "rofi -show drun -config ~/.config/rofi/themes/launcher.rasi";
       terminal = "kitty";
       gaps = {
         inner = 20;
@@ -86,7 +86,8 @@
           "${modifier}+b" = ''exec --no-startup-id vivaldi'';
 
           # Rofi
-          "${modifier}+r" = "exec --no-startup-id rofi -show run -config ~/.dotfiles/modules/home-manager/rofi/launcher.rasi";
+          "${modifier}+r" = "exec --no-startup-id rofi -show run -config ~/.config/rofi/themes/launcher.rasi";
+          "${modifier}+Shift+e" = "exec ~/scripts/waybar/powermenu.sh";
         };
 
       bars = [
@@ -118,6 +119,11 @@
     "scripts/sway/clamshell.sh" = {
     source = ./scripts/sway/clamshell.sh;
     executable = true;
+    };
+
+    # rofi theme
+    ".config/rofi/themes/launcher.rasi" = {
+      source = ./rofi/launcher.rasi;
     };
   };
 
