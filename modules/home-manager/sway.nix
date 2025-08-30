@@ -2,6 +2,8 @@
 
 {
 
+  programs.rofi.enable = true;
+
   wayland.windowManager.sway = {
     enable = true;
     package = pkgs.sway;
@@ -30,8 +32,7 @@
         "7119:5:USB_Optical_Mouse".left_handed = "enabled";
       };
 
-      # menu = "rofi -show drun";
-      menu = " tofi-drun | xargs swaymsg exec --";
+      menu = "rofi -show drun -config ~/.dotfiles/modules/home-manager/rofi/launcher.rasi";
       terminal = "kitty";
       gaps = {
         inner = 20;
@@ -78,12 +79,14 @@
           "${modifier}+Shift+s" = ''exec grim -g "$(slurp -d)" - | wl-copy'';
           "Print" = ''exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')'';
 
-          # Tofi run
-          "${modifier}+r" = ''exec --no-startup-id tofi-run | xargs swaymsg exec --'';
+          # Resize
           "${modifier}+Shift+r" = "mode resize";
 
           # Browser
           "${modifier}+b" = ''exec --no-startup-id vivaldi'';
+
+          # Rofi
+          "${modifier}+r" = "exec --no-startup-id rofi -show run -config ~/.dotfiles/modules/home-manager/rofi/launcher.rasi";
         };
 
       bars = [
@@ -105,9 +108,6 @@
 
       # Start pcloud on system start
       exec pcloud
-
-      # Start pcloud on system start
-      exec mullvad-gui
     '';
 
   };

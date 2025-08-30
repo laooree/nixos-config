@@ -12,7 +12,7 @@
     firefox.enable = false;
     mako.enable = false;
     sway.enable = false;
-    tofi.enable = false;
+    rofi.enable = false;
     waybar.enable = false;
 
   };
