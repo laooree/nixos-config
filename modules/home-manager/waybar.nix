@@ -44,6 +44,9 @@
           "custom/sep-bg-3"
           "backlight"
           "custom/sep-bg-1"
+          "custom/sep-bt-3"
+          "bluetooth"
+          "custom/sep-bt-1"
           "custom/sep-bg-3"
           "tray"
           "custom/sep-bg-1"
@@ -145,6 +148,10 @@
           spacing = 10;
         };
 
+        "bluetooth" = {
+          on-click = "kitty --title '󰂯 Bluetooth TUI' bash -c bluetui";
+        };
+
         "clock" = {
           format = " 󰸗   {:%B %d, %H:%M}  ";
           tooltip = true;
@@ -220,6 +227,16 @@
           tooltip = false;
         };
 
+        "custom/sep-bt-1" = {
+          format = "";
+          tooltip = false;
+        };
+
+        "custom/sep-bt-3" = {
+          format = "";
+          tooltip = false;
+        };
+
       };
 
       bottomBar = {
@@ -277,6 +294,12 @@
 
       #tray {
         background: #222222;
+      }
+
+      #bluetooth {
+        color: #c2c2b0;
+        background: #1f3a5f;
+        font-size: 22px;
       }
 
       #clock {
@@ -370,6 +393,13 @@
       #custom-sep-pwb-3 {
         background: #151515;
         color: #824040;
+        font-size: 30px;
+      }
+
+      #custom-sep-bt-1,
+      #custom-sep-bt-3 {
+        background: #151515;
+        color: #1f3a5f;
         font-size: 30px;
       }
 
