@@ -141,6 +141,7 @@
           format-bluetooth = " 󰂰  {volume}% ";
           format-source = "    {volume}% ";
           scroll-step = 2;
+          on-click = "~/scripts/waybar/pactl-select-sink.sh";
         };
 
         "tray" = {
@@ -408,10 +409,17 @@
   };
 
   home.file = {
+
     "scripts/waybar/powermenu.sh" = {
       source = ./scripts/waybar/powermenu.sh;
       executable = true;
     };
+
+    "scripts/waybar/pactl-select-sink.sh" = {
+      source = ./scripts/waybar/pactl-select-sink.sh;
+      executable = true;
+    };
+
   };
 
 }
