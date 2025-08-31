@@ -115,9 +115,6 @@
   # Enable zsh
   programs.zsh.enable = true;
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -135,6 +132,9 @@
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
   };
+
+  # Install firefox
+  programs.firefox.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -154,7 +154,7 @@
     keyd
     kitty
     libreoffice
-    librewolf
+    mullvad-browser
     neovim
     obs-studio
     pcloud
