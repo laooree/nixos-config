@@ -111,21 +111,21 @@
 
         "battery" = {
           interval = 10;
-          format = " {icon} {capacity}% ";
+          format = " {icon}  {capacity}% ";
           format-charging = "   {capacity}% ";
           format-icons = [ "󰂎" "󰁼" "󰁾" "󰂀" "󰁹" ];
         };
 
         "backlight" = {
           interval = 10;
-          format = " 󰃝  {percent}% ";
+          format = " 󰃝   {percent}% ";
         };
 
         "network" = {
           interval = 5;
-          format = " 󰈁 {ifname} ";
-          format-ethernet = " 󰈁 {ifname} ";
-          format-wifi = "    ({signalStrength}%) {essid} ";
+          format = " 󰈁 ";
+          format-ethernet = " 󰈁 ";
+          format-wifi = "     {signalStrength}% ";
           format-disconnected = "󰲛 ";
           on-click = "kitty --title '  Network Manager TUI' bash -c nmtui";
         };
@@ -150,6 +150,10 @@
         };
 
         "bluetooth" = {
+          format-on        = " 󰂯 ";
+          format-connected = " 󰂱 ";
+          format-off       = " 󰂲 ";
+          format-disabled  = " 󰂲 ";
           on-click = "kitty --title '󰂯 Bluetooth TUI' bash -c bluetui";
         };
 

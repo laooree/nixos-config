@@ -117,20 +117,6 @@
 
   };
 
-
-  home.file = {
-    # sway
-    "scripts/sway/clamshell.sh" = {
-    source = ./scripts/sway/clamshell.sh;
-    executable = true;
-    };
-
-    # rofi theme
-    ".config/rofi/themes/launcher.rasi" = {
-      source = ./rofi/launcher.rasi;
-    };
-  };
-
   services.mako = {
     enable = true;
     package = pkgs.mako;
@@ -155,5 +141,19 @@
 
     };
   };
+
+  home.file = {
+    # sway
+    "scripts/sway/clamshell.sh" = {
+    source = ./scripts/sway/clamshell.sh;
+    executable = true;
+    };
+
+    # rofi theme
+    ".config/rofi/themes/launcher.rasi" = {
+      source = ./rofi/launcher.rasi;
+    };
+  };
+
 
 }
