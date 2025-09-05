@@ -14,11 +14,11 @@
     config = {
 
       colors.focused = {
-        background =  "#151515";
-        border =      "#5f875f";
-        childBorder = "#5f875f";
-        indicator =   "#5f875f";
-        text =        "#c2c2b0";
+        background =  "#0f0e06";
+        border =      "#d0730f";
+        childBorder = "#d0730f";
+        indicator =   "#d0730f";
+        text =        "#cfbcba";
       };
       input = {
         "type:keyboard" = {
@@ -43,12 +43,12 @@
       output = {
         "HDMI-A-1" = {
           # mode = "2560x1600@59.951Hz";
-          bg = "~/.dotfiles/images/wallpapers/beautiful-forest.jpg fill";
+          bg = "~/.dotfiles/images/wallpapers/blurry-autumn.jpg fill";
         };
         "eDP-1" = {
           # scale = "1.2";
           mode = "2560x1600@60Hz";
-          bg = "~/.dotfiles/images/wallpapers/beautiful-forest.jpg fill";
+          bg = "~/.dotfiles/images/wallpapers/blurry-autumn.jpg fill";
         };
       };
 
@@ -134,9 +134,9 @@
       border-size = 3;
       max-icon-size = 75;
 
-      background-color = "#151515ff";
-      border-color =     "#5f875f";
-      text-color =       "#c2c2b0";
+      background-color = "#0f0e06ff";
+      border-color =     "#d0730f";
+      text-color =       "#feeeca";
 
 
     };

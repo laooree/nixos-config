@@ -277,8 +277,8 @@
       }
 
       window#waybar {
-        background: #151515;
-        color: #c2c2b0;
+        background: #0f0e06;
+        color: #cfbcba;
       }
 
       #network,
@@ -286,54 +286,54 @@
       #battery,
       #backlight,
       #disk {
-        color: #c2c2b0;
-        background: #222222;
+        color: #cfbcba;
+        background: #36322f;
         font-size: 22px;
       }
 
       #window {
-        color: #c2c2b0;
-        background: #222222;
+        color: #cfbcba;
+        background: #36322f;
         font-size: 22px;
       }
 
       #tray {
-        background: #222222;
+        background: #36322f;
       }
 
       #bluetooth {
-        color: #c2c2b0;
-        background: #1f3a5f;
+        color: #cfbcba;
+        background: #0050af;
         font-size: 22px;
       }
 
       #clock {
-        color: #151515;
-        background: #5f875f;
+        color: #0f0e06;
+        background: #f06a3f;
         font-size: 22px;
       }
 
       #privacy {
-        color: #222222;
-        background: #fd9720;
+        color: #0f0e06;
+        background: #ffaa33;
       }
 
       #custom-separator {
         font-size: 30px;
-        color: #151515;
-        background: #151515;
+        color: #0f0e06;
+        background: #0f0e06;
       }
 
       #custom-nixos-logo {
-        color: #151515;
-        background: #5f875f;
+        color: #0f0e06;
+        background: #f06a3f;
         font-size: 30px;
       }
 
       #workspaces button {
         padding: 0 0px;
-        color: #c2c2b0;
-        background: #242d1d;
+        color: #cfbcba;
+        background: #692a12;
         border-radius: 0px;
         font-size: 22px;
         font-weight: 700;
@@ -341,32 +341,32 @@
 
       #workspaces button.focused {
         padding: 0 0px;
-        color: #c9a554;
-        background: #242d1d;
+        color: #2fa526;
+        background: #692a12;
         border-radius: 0px;
         font-size: 26px;
       }
 
       #custom-powermenu {
-        color: #c2c2b0;
-        background: #824040;
+        color: #0f0e06;
+        background: #ef656a;
         font-size: 22px;
       }
 
       #taskbar {
-        color: #c2c2b0;
-        background: #151515;
+        color: #cfbcba;
+        background: #0f0e06;
         font-size: 22px;
         padding: 0 10px;
       }
 
       #taskbar button {
-        color: #c2c2b0;
+        color: #cfbcba;
         padding: 0 10px;
       }
 
       #taskbar button.active {
-        color: #c9a554;
+        color: #2fa526;
         padding: 0 10px;
         font-weight: 700;
       }
@@ -375,36 +375,36 @@
       #custom-sep-bg-2,
       #custom-sep-bg-3,
       #custom-sep-bg-4 {
-        color: #222222;
-        background: #151515;
+        color: #36322f;
+        background: #0f0e06;
         font-size: 30px;
       }
 
       #custom-sep-hl-1,
       #custom-sep-hl-3,
       #custom-sep-hl-4 {
-        background: #151515;
-        color: #5f875f;
+        background: #0f0e06;
+        color: #f06a3f;
         font-size: 30px;
       }
 
       #custom-sep-ws-2,
       #custom-sep-ws-4 {
-        background: #151515;
-        color: #242d1d;
+        background: #0f0e06;
+        color: #692a12;
         font-size: 30px;
       }
 
       #custom-sep-pwb-3 {
-        background: #151515;
-        color: #824040;
+        background: #0f0e06;
+        color: #ef656a;
         font-size: 30px;
       }
 
       #custom-sep-bt-1,
       #custom-sep-bt-3 {
-        background: #151515;
-        color: #1f3a5f;
+        background: #0f0e06;
+        color: #0050af;
         font-size: 30px;
       }
 
