@@ -277,8 +277,8 @@
       }
 
       window#waybar {
-        background: #0f0e06;
-        color: #cfbcba;
+        background: ${config.stylix.base16Scheme.base00};
+        color: ${config.stylix.base16Scheme.base05};
       }
 
       #network,
@@ -286,54 +286,54 @@
       #battery,
       #backlight,
       #disk {
-        color: #cfbcba;
-        background: #36322f;
+        color: ${config.stylix.base16Scheme.base05};
+        background: ${config.stylix.base16Scheme.base01};
         font-size: 22px;
       }
 
       #window {
-        color: #cfbcba;
-        background: #36322f;
+        color: ${config.stylix.base16Scheme.base05};
+        background: ${config.stylix.base16Scheme.base01};
         font-size: 22px;
       }
 
       #tray {
-        background: #36322f;
+        background: ${config.stylix.base16Scheme.base01};
       }
 
       #bluetooth {
-        color: #cfbcba;
-        background: #0050af;
+        color: ${config.stylix.base16Scheme.base05};
+        background: ${config.stylix.base16Scheme.base15};
         font-size: 22px;
       }
 
       #clock {
-        color: #0f0e06;
-        background: #f06a3f;
+        color: ${config.stylix.base16Scheme.base00};
+        background: ${config.stylix.base16Scheme.base07};
         font-size: 22px;
       }
 
       #privacy {
-        color: #0f0e06;
-        background: #ffaa33;
+        color: ${config.stylix.base16Scheme.base00};
+        background: ${config.stylix.base16Scheme.base11};
       }
 
       #custom-separator {
         font-size: 30px;
-        color: #0f0e06;
-        background: #0f0e06;
+        color: ${config.stylix.base16Scheme.base00};
+        background: ${config.stylix.base16Scheme.base00};
       }
 
       #custom-nixos-logo {
-        color: #0f0e06;
-        background: #f06a3f;
+        color: ${config.stylix.base16Scheme.base00};
+        background: ${config.stylix.base16Scheme.base07};
         font-size: 30px;
       }
 
       #workspaces button {
         padding: 0 0px;
-        color: #cfbcba;
-        background: #692a12;
+        color: ${config.stylix.base16Scheme.base05};
+        background: ${config.stylix.base16Scheme.base10};
         border-radius: 0px;
         font-size: 22px;
         font-weight: 700;
@@ -341,32 +341,32 @@
 
       #workspaces button.focused {
         padding: 0 0px;
-        color: #2fa526;
-        background: #692a12;
+        color: ${config.stylix.base16Scheme.base11};
+        background: ${config.stylix.base16Scheme.base10};
         border-radius: 0px;
         font-size: 26px;
       }
 
       #custom-powermenu {
-        color: #0f0e06;
-        background: #ef656a;
+        color: ${config.stylix.base16Scheme.base00};
+        background: ${config.stylix.base16Scheme.base08};
         font-size: 22px;
       }
 
       #taskbar {
-        color: #cfbcba;
-        background: #0f0e06;
+        color: ${config.stylix.base16Scheme.base05};
+        background: ${config.stylix.base16Scheme.base00};
         font-size: 22px;
         padding: 0 10px;
       }
 
       #taskbar button {
-        color: #cfbcba;
+        color: ${config.stylix.base16Scheme.base05};
         padding: 0 10px;
       }
 
       #taskbar button.active {
-        color: #2fa526;
+        color: ${config.stylix.base16Scheme.base07};
         padding: 0 10px;
         font-weight: 700;
       }
@@ -375,36 +375,36 @@
       #custom-sep-bg-2,
       #custom-sep-bg-3,
       #custom-sep-bg-4 {
-        color: #36322f;
-        background: #0f0e06;
+        color: ${config.stylix.base16Scheme.base01};
+        background: ${config.stylix.base16Scheme.base00};
         font-size: 30px;
       }
 
       #custom-sep-hl-1,
       #custom-sep-hl-3,
       #custom-sep-hl-4 {
-        background: #0f0e06;
-        color: #f06a3f;
+        background: ${config.stylix.base16Scheme.base00};
+        color: ${config.stylix.base16Scheme.base07};
         font-size: 30px;
       }
 
       #custom-sep-ws-2,
       #custom-sep-ws-4 {
-        background: #0f0e06;
-        color: #692a12;
+        background: ${config.stylix.base16Scheme.base00};
+        color: ${config.stylix.base16Scheme.base10};
         font-size: 30px;
       }
 
       #custom-sep-pwb-3 {
-        background: #0f0e06;
-        color: #ef656a;
+        background: ${config.stylix.base16Scheme.base00};
+        color: ${config.stylix.base16Scheme.base08};
         font-size: 30px;
       }
 
       #custom-sep-bt-1,
       #custom-sep-bt-3 {
-        background: #0f0e06;
-        color: #0050af;
+        background: ${config.stylix.base16Scheme.base00};
+        color: ${config.stylix.base16Scheme.base15};
         font-size: 30px;
       }
 

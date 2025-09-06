@@ -14,11 +14,11 @@
     config = {
 
       colors.focused = {
-        background =  "#0f0e06";
-        border =      "#d0730f";
-        childBorder = "#d0730f";
-        indicator =   "#d0730f";
-        text =        "#cfbcba";
+        background =  "${config.stylix.base16Scheme.base00}";
+        border =      "${config.stylix.base16Scheme.base07}";
+        childBorder = "${config.stylix.base16Scheme.base07}";
+        indicator =   "${config.stylix.base16Scheme.base11}";
+        text =        "${config.stylix.base16Scheme.base05}";
       };
       input = {
         "type:keyboard" = {
@@ -134,11 +134,9 @@
       border-size = 3;
       max-icon-size = 75;
 
-      background-color = "#0f0e06ff";
-      border-color =     "#d0730f";
-      text-color =       "#feeeca";
-
-
+      background-color = "${config.stylix.base16Scheme.base00}ff";
+      border-color =     "${config.stylix.base16Scheme.base07}";
+      text-color =       "${config.stylix.base16Scheme.base05}";
     };
   };
 
