@@ -1,5 +1,9 @@
 { config, input, pkgs, lib, ... }:
 
+let
+  bar-height = 30;
+  font-size = 22;
+in
 {
 
   programs.waybar = {
@@ -11,7 +15,7 @@
       topBar = {
         layer = "top";
         position = "top";
-        height = 30;
+        height = bar-height;
         output = [
           "eDP-1"
           "HDMI-A-1"
@@ -244,26 +248,26 @@
 
       };
 
-      bottomBar = {
-        layer = "top";
-        position = "bottom";
-        height = 30;
-        output = [
-          "eDP-1"
-          "HDMI-A-1"
-        ];
+    #   bottomBar = {
+    #     layer = "top";
+    #     position = "bottom";
+    #     height = bar-height;
+    #     output = [
+    #       "eDP-1"
+    #       "HDMI-A-1"
+    #     ];
 
-        modules-center = [
-          "wlr/taskbar"
-        ];
+    #     modules-center = [
+    #       "wlr/taskbar"
+    #     ];
 
-        "wlr/taskbar" = {
-          format = "{icon} {app_id}";
-          icon-size = 24;
-          on-click = "activate";
-        };
+    #     "wlr/taskbar" = {
+    #       format = "{icon} {app_id}";
+    #       icon-size = 24;
+    #       on-click = "activate";
+    #     };
 
-      };
+    #   };
     };
 
 
@@ -288,13 +292,13 @@
       #disk {
         color: ${config.stylix.base16Scheme.base05};
         background: ${config.stylix.base16Scheme.base01};
-        font-size: 22px;
+        font-size: ${toString font-size}px;
       }
 
       #window {
         color: ${config.stylix.base16Scheme.base05};
         background: ${config.stylix.base16Scheme.base01};
-        font-size: 22px;
+        font-size: ${toString font-size}px;
       }
 
       #tray {
@@ -304,22 +308,23 @@
       #bluetooth {
         color: ${config.stylix.base16Scheme.base05};
         background: ${config.stylix.base16Scheme.base15};
-        font-size: 22px;
+        font-size: ${toString font-size}px;
       }
 
       #clock {
         color: ${config.stylix.base16Scheme.base00};
         background: ${config.stylix.base16Scheme.base07};
-        font-size: 22px;
+        font-size: ${toString font-size}px;
       }
 
       #privacy {
         color: ${config.stylix.base16Scheme.base00};
         background: ${config.stylix.base16Scheme.base11};
+        font-size: ${toString font-size}px;
       }
 
       #custom-separator {
-        font-size: 30px;
+        font-size: ${toString bar-height}px;
         color: ${config.stylix.base16Scheme.base00};
         background: ${config.stylix.base16Scheme.base00};
       }
@@ -327,7 +332,7 @@
       #custom-nixos-logo {
         color: ${config.stylix.base16Scheme.base00};
         background: ${config.stylix.base16Scheme.base07};
-        font-size: 30px;
+        font-size: ${toString bar-height}px;
       }
 
       #workspaces button {
@@ -335,7 +340,7 @@
         color: ${config.stylix.base16Scheme.base05};
         background: ${config.stylix.base16Scheme.base10};
         border-radius: 0px;
-        font-size: 22px;
+        font-size: ${toString font-size}px;
         font-weight: 700;
       }
 
@@ -344,19 +349,19 @@
         color: ${config.stylix.base16Scheme.base11};
         background: ${config.stylix.base16Scheme.base10};
         border-radius: 0px;
-        font-size: 26px;
+        font-size: ${toString (font-size+4)}px;
       }
 
       #custom-powermenu {
         color: ${config.stylix.base16Scheme.base00};
         background: ${config.stylix.base16Scheme.base08};
-        font-size: 22px;
+        font-size: ${toString font-size}px;
       }
 
       #taskbar {
         color: ${config.stylix.base16Scheme.base05};
         background: ${config.stylix.base16Scheme.base00};
-        font-size: 22px;
+        font-size: ${toString font-size}px;
         padding: 0 10px;
       }
 
@@ -377,7 +382,7 @@
       #custom-sep-bg-4 {
         color: ${config.stylix.base16Scheme.base01};
         background: ${config.stylix.base16Scheme.base00};
-        font-size: 30px;
+        font-size: ${toString bar-height}px;
       }
 
       #custom-sep-hl-1,
@@ -385,27 +390,27 @@
       #custom-sep-hl-4 {
         background: ${config.stylix.base16Scheme.base00};
         color: ${config.stylix.base16Scheme.base07};
-        font-size: 30px;
+        font-size: ${toString bar-height}px;
       }
 
       #custom-sep-ws-2,
       #custom-sep-ws-4 {
         background: ${config.stylix.base16Scheme.base00};
         color: ${config.stylix.base16Scheme.base10};
-        font-size: 30px;
+        font-size: ${toString bar-height}px;
       }
 
       #custom-sep-pwb-3 {
         background: ${config.stylix.base16Scheme.base00};
         color: ${config.stylix.base16Scheme.base08};
-        font-size: 30px;
+        font-size: ${toString bar-height}px;
       }
 
       #custom-sep-bt-1,
       #custom-sep-bt-3 {
         background: ${config.stylix.base16Scheme.base00};
         color: ${config.stylix.base16Scheme.base15};
-        font-size: 30px;
+        font-size: ${toString bar-height}px;
       }
 
     '';
