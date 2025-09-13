@@ -307,7 +307,7 @@ in
 
       #bluetooth {
         color: ${config.stylix.base16Scheme.base05};
-        background: ${config.stylix.base16Scheme.base15};
+        background: ${config.stylix.base16Scheme.base0D};
         font-size: ${toString font-size}px;
       }
 
@@ -319,7 +319,7 @@ in
 
       #privacy {
         color: ${config.stylix.base16Scheme.base00};
-        background: ${config.stylix.base16Scheme.base11};
+        background: ${config.stylix.base16Scheme.base0A};
         font-size: ${toString font-size}px;
       }
 
@@ -346,7 +346,7 @@ in
 
       #workspaces button.focused {
         padding: 0 0px;
-        color: ${config.stylix.base16Scheme.base11};
+        color: ${config.stylix.base16Scheme.base0A};
         background: ${config.stylix.base16Scheme.base10};
         border-radius: 0px;
         font-size: ${toString (font-size+4)}px;
@@ -409,7 +409,7 @@ in
       #custom-sep-bt-1,
       #custom-sep-bt-3 {
         background: ${config.stylix.base16Scheme.base00};
-        color: ${config.stylix.base16Scheme.base15};
+        color: ${config.stylix.base16Scheme.base0D};
         font-size: ${toString bar-height}px;
       }
 

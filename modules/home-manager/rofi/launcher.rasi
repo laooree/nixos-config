@@ -19,10 +19,10 @@ configuration {
 * {
     background:     #000000DF;
     background-alt: #333333;
-    foreground:     #ffffff;
-    selected:       #666666;
-    active:         #666666;
-    urgent:         #666666;
+    foreground:     #c2c2b0;
+    selected:       #242d1d;
+    active:         #242d1d;
+    urgent:         #242d1d;
 
     border-colour:               var(selected);
     handle-colour:               var(selected);

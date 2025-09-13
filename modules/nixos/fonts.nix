@@ -13,12 +13,12 @@
     cm_unicode
     dinish
     fira-sans
-    libertinus
     libertine
+    libertinus
     nerd-fonts.fira-mono
-    nerd-fonts.fira-code
     nerd-fonts.iosevka
-    nerd-fonts.recursive-mono
+    nerd-fonts.iosevka-term-slab
+    nerd-fonts.roboto-mono
     nerd-fonts.symbols-only
     noto-fonts-color-emoji
   ];

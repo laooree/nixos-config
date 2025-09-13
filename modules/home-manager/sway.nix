@@ -17,7 +17,7 @@
         background =  "${config.stylix.base16Scheme.base00}";
         border =      "${config.stylix.base16Scheme.base07}";
         childBorder = "${config.stylix.base16Scheme.base07}";
-        indicator =   "${config.stylix.base16Scheme.base11}";
+        indicator =   "${config.stylix.base16Scheme.base0A}";
         text =        "${config.stylix.base16Scheme.base05}";
       };
       input = {
