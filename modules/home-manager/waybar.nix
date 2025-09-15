@@ -307,7 +307,7 @@ in
 
       #bluetooth {
         color: ${config.stylix.base16Scheme.base05};
-        background: ${config.stylix.base16Scheme.base0D};
+        background: ${config.stylix.base16Scheme.base15};
         font-size: ${toString font-size}px;
       }
 
@@ -338,7 +338,7 @@ in
       #workspaces button {
         padding: 0 0px;
         color: ${config.stylix.base16Scheme.base05};
-        background: ${config.stylix.base16Scheme.base10};
+        background: ${config.stylix.base16Scheme.base14};
         border-radius: 0px;
         font-size: ${toString font-size}px;
         font-weight: 700;
@@ -347,7 +347,7 @@ in
       #workspaces button.focused {
         padding: 0 0px;
         color: ${config.stylix.base16Scheme.base0A};
-        background: ${config.stylix.base16Scheme.base10};
+        background: ${config.stylix.base16Scheme.base14};
         border-radius: 0px;
         font-size: ${toString (font-size+4)}px;
       }
@@ -371,7 +371,7 @@ in
       }
 
       #taskbar button.active {
-        color: ${config.stylix.base16Scheme.base07};
+        color: ${config.stylix.base16Scheme.base0A};
         padding: 0 10px;
         font-weight: 700;
       }
@@ -396,7 +396,7 @@ in
       #custom-sep-ws-2,
       #custom-sep-ws-4 {
         background: ${config.stylix.base16Scheme.base01};
-        color: ${config.stylix.base16Scheme.base10};
+        color: ${config.stylix.base16Scheme.base14};
         font-size: ${toString bar-height}px;
       }
 
@@ -409,7 +409,7 @@ in
       #custom-sep-bt-1,
       #custom-sep-bt-3 {
         background: ${config.stylix.base16Scheme.base01};
-        color: ${config.stylix.base16Scheme.base0D};
+        color: ${config.stylix.base16Scheme.base15};
         font-size: ${toString bar-height}px;
       }
 

@@ -14,23 +14,34 @@
 
     polarity = "dark";
     base16Scheme = {
-      base00 = "#222222";
-      base01 = "#151515";
-      base02 = "#333333";
-      base03 = "#444444";
-      base04 = "#666666";
-      base05 = "#c2c2b0";
+
+      base00 = "#24211e";
+      base01 = "#161413";
+      base02 = "#38332e";
+      base03 = "#433d37";
+      base04 = "#655c53";
+      base05 = "#c7c2bc";
       base06 = "#eaeaea";
-      base07 = "#6f975f";
-      base08 = "#f86448";
-      base09 = "#e88448";
-      base0A = "#c9a554";
-      base0B = "#6f975f";
-      base0C = "#67aedb";
-      base0D = "#1f5a9f";
-      base0E = "#f46a9f";
-      base0F = "#f49abf";
-      base10 = "#252d1d";
+      base07 = "#5f875f";
+
+      base08 = "#a66b6b";
+      base09 = "#a6875b";
+      base0A = "#a69b5b";
+      base0B = "#5f875f";
+      base0C = "#5b9ca6";
+      base0D = "#5b87a6";
+      base0E = "#a65b87";
+      base0F = "#735f87";
+
+      base10 = "#5c3333";
+      base11 = "#5c4633";
+      base12 = "#5c5c33";
+      base13 = "#335c5c";
+      base14 = "#2a3c2a";
+      base15 = "#33465c";
+      base16 = "#46335c";
+      base17 = "#5c3346";
+
     };
 
     cursor = {

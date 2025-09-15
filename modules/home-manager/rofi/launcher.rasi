@@ -17,12 +17,12 @@ configuration {
 /*****----- Global Properties -----*****/
 
 * {
-    background:     #000000DF;
-    background-alt: #333333;
-    foreground:     #c2c2b0;
-    selected:       #242d1d;
-    active:         #242d1d;
-    urgent:         #242d1d;
+    background:     #161413DF;
+    background-alt: #38332e;
+    foreground:     #c7c2bc
+    selected:       #2a3c2a;
+    active:         #2a3c2a;
+    urgent:         #2a3c2a;
 
     border-colour:               var(selected);
     handle-colour:               var(selected);
