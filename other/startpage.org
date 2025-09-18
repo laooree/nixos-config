@@ -61,12 +61,14 @@
 #+HTML_HEAD: });
 #+HTML_HEAD: </script>
 
+
 * Search
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: category
 :END:
 [[https://www.startpage.com/][( s ) Startpage]]
 [[https://www.google.com/][( G ) Google]]
+
 
 * Messaging
 :PROPERTIES:
@@ -76,9 +78,15 @@
 [[https://web.whatsapp.com][( w ) Whatsapp]]
 
 
+* Productivity
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: category
+:END:
+[[https://mynoise.net/][( n ) MyNoise]]
+
+
 * Entertainment
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: category
 :END:
 [[https://youtube.com][( y ) YouTube]]
-[[https://netflix.com][( n ) Netflix]]
