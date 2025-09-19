@@ -141,6 +141,7 @@
   environment.systemPackages = with pkgs; [
     bluetui
     cava
+    deadbeef-with-plugins
     discord
     easyeffects
     epy
