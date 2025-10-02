@@ -18,6 +18,7 @@
     ./modules/nixos/programming-languages.nix
     ./modules/nixos/stylix.nix
     ./modules/nixos/sway.nix
+    ./modules/nixos/syncthing.nix
     ./modules/nixos/virtualbox.nix
   ];
 
@@ -28,7 +29,7 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "sigma"; # Define your hostname.
+  networking.hostName = "lambda"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # enable bluetooth
@@ -152,12 +153,14 @@
     git
     imagemagick
     inkscape-with-extensions
+    ipe
     keyd
     kitty
     libreoffice
     mullvad-browser
     neovim
     obs-studio
+    onlyoffice-desktopeditors
     pcloud
     pokemmo-installer
     pokemon-colorscripts
@@ -166,7 +169,6 @@
     telegram-desktop
     texliveFull texlab # latex + lsp
     tor-browser
-    vivaldi
     vlc
     xremap
     zip

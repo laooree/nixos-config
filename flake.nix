@@ -17,7 +17,7 @@
 
   outputs = { self, nixpkgs, stylix, ... }@inputs:
     {
-    nixosConfigurations.sigma = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.lambda = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = {inherit inputs;};
       modules = [
