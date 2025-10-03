@@ -141,6 +141,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     bluetui
+    brave
     cava
     deadbeef-with-plugins
     discord
