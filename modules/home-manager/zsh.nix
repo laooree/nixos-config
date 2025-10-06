@@ -19,6 +19,7 @@
       vim = "nvim";
       nix-test = "sudo nixos-rebuild test --flake .";
       e = ''emacsclient --no-window --alternate-editor=""'';
+      ed =''emacsclient --no-window --eval "(dired \"$(pwd)\")" --alternate-editor=""'';
     };
     history.size = 10000;
     history.ignoreAllDups = true;
