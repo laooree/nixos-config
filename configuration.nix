@@ -20,6 +20,7 @@
     ./modules/nixos/sway.nix
     ./modules/nixos/syncthing.nix
     ./modules/nixos/virtualbox.nix
+    ./modules/nixos/xremap.nix
   ];
 
   # Bootloader.
@@ -155,7 +156,6 @@
     imagemagick
     inkscape-with-extensions
     ipe
-    keyd
     kitty
     libreoffice
     mullvad-browser
@@ -178,21 +178,6 @@
 
   systemd.user.targets.graphical-session = {
     wantedBy = [ "default.target" ];
-  };
-
-  services.keyd = {
-    enable = true;
-    keyboards = {
-      default = {
-        ids = [ "*" ];
-        settings = {
-          main = {
-            capslock = "overload(control, esc)";
-            control = "overload(control, capslock)";
-          };
-        };
-      };
-    };
   };
 
   # Some programs need SUID wrappers, can be configured further or are
