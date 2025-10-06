@@ -83,7 +83,7 @@
           "${modifier}+Shift+r" = "mode resize";
 
           # Browser
-          "${modifier}+b" = ''exec --no-startup-id vivaldi'';
+          "${modifier}+b" = ''exec --no-startup-id brave'';
 
           # Split
           "${modifier}+v" = "splitv";

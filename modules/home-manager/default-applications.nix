@@ -17,27 +17,27 @@
 
       defaultApplications = {
         # Browser
-        "text/html"                = "mullvad-browser.desktop";
-        "application/xhtml+xml"    = "mullvad-browser.desktop";
-        "x-scheme-handler/http"    = "mullvad-browser.desktop";
-        "x-scheme-handler/https"   = "mullvad-browser.desktop";
-        "x-scheme-handler/about"   = "mullvad-browser.desktop";
-        "x-scheme-handler/unknown" = "mullvad-browser.desktop";
+        "text/html"                = "brave-browser.desktop";
+        "application/xhtml+xml"    = "brave-browser.desktop";
+        "x-scheme-handler/http"    = "brave-browser.desktop";
+        "x-scheme-handler/https"   = "brave-browser.desktop";
+        "x-scheme-handler/about"   = "brave-browser.desktop";
+        "x-scheme-handler/unknown" = "brave-browser.desktop";
 
         # PDF
-        "application/pdf"          = "org.gnome.Evince.desktop";
+        "application/pdf"          = "firefox.desktop";
 
         # Telegram
         "x-scheme-handler/tg"      = "org.telegram.desktop.desktop";
         "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
 
         # Images
-        "image/png"                = "org.gnome.Loupe.desktop";
-        "image/jpeg"               = "org.gnome.Loupe.desktop";
-        "image/jpg"                = "org.gnome.Loupe.desktop";
-        "image/gif"                = "org.gnome.Loupe.desktop";
-        "image/webp"               = "org.gnome.Loupe.desktop";
-        "image/svg+xml"            = "org.gnome.Loupe.desktop";
+        "image/png"                = "firefox.desktop";
+        "image/jpeg"               = "firefox.desktop";
+        "image/jpg"                = "firefox.desktop";
+        "image/gif"                = "firefox.desktop";
+        "image/webp"               = "firefox.desktop";
+        "image/svg+xml"            = "firefox.desktop";
 
         # Videos
         "video/mp4"              = "vlc.desktop";
