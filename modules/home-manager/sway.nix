@@ -84,14 +84,21 @@
 
           # Browser
           "${modifier}+b" = ''exec --no-startup-id brave'';
+          "${modifier}+Shift+b" = ''exec --no-startup-id brave --incognito'';
 
           # Split
           "${modifier}+v" = "splitv";
           "${modifier}+h" = "splith";
 
+          # Fullscreen
+          "${modifier}+Shift+f" = "fullscreen toggle";
+
           # Rofi
           "${modifier}+r" = "exec --no-startup-id rofi -show run -config ~/.config/rofi/themes/launcher.rasi";
           "${modifier}+Shift+e" = "exec ~/scripts/waybar/powermenu.sh";
+
+          # Files
+          "${modifier}+f" = "exec --no-startup-id nautilus";
         };
 
       bars = [
