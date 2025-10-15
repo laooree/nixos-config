@@ -15,19 +15,19 @@
     polarity = "dark";
     base16Scheme = {
 
-      base00 = "#24211e";
-      base01 = "#161413";
-      base02 = "#38332e";
-      base03 = "#433d37";
-      base04 = "#655c53";
-      base05 = "#c7c2bc";
-      base06 = "#eaeaea";
-      base07 = "#5f875f";
+      base00 = "#202020";
+      base01 = "#151515";
+      base02 = "#303030";
+      base03 = "#444444";
+      base04 = "#666666";
+      base05 = "#e4e4e4";
+      base06 = "#f6f6f6";
+      base07 = "#709970";
 
-      base08 = "#a66b6b";
-      base09 = "#a6875b";
+      base08 = "#a64b4b";
+      base09 = "#b6875b";
       base0A = "#a69b5b";
-      base0B = "#5f875f";
+      base0B = "#709970";
       base0C = "#5b9ca6";
       base0D = "#5b87a6";
       base0E = "#a65b87";
