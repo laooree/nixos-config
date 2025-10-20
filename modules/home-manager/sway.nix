@@ -120,6 +120,9 @@
 
       # Start pcloud on system start
       exec pcloud
+
+      # Restart xremap service
+      exec_always systemctl --user restart xremap.service
     '';
 
   };
