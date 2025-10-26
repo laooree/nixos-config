@@ -16,8 +16,8 @@
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
     ./modules/nixos/programming-languages.nix
-    ./modules/nixos/stylix.nix
-    ./modules/nixos/sway.nix
+    # ./modules/nixos/stylix.nix
+    # ./modules/nixos/sway.nix
     ./modules/nixos/syncthing.nix
     ./modules/nixos/virtualbox.nix
     ./modules/nixos/xremap.nix

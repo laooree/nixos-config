@@ -27,7 +27,7 @@
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
 
     initContent = ''
-      PROMPT="%F{${config.stylix.base16Scheme.base07}}%n in %~"$'\n'"%f%k "
+      PROMPT="%F{2}%n in %~"$'\n'"%f%k "
 
       zstyle ':completion:*' menu select # tab opens cmp menu
       # zstyle ':completion:*' special-dirs true # force . and .. to show in cmp menu
