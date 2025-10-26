@@ -17,5 +17,5 @@
     nerd-fonts.iosevka
     nerd-fonts.symbols-only
   ];
-  
+
 }
