@@ -8,6 +8,7 @@
     # configuration dependencies
     ripgrep
     git
+    wl-clipboard
 
     # formatters
     nixfmt-rfc-style
