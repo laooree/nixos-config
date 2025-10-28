@@ -165,7 +165,7 @@
     onlyoffice-desktopeditors
     pcloud
     pokemmo-installer
-    pokemon-colorscripts
+    # pokemon-colorscripts
     sl
     spotify
     telegram-desktop
