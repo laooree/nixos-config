@@ -141,7 +141,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    phinger-cursors
     bluetui
     brave
     cava
@@ -164,8 +163,8 @@
     obs-studio
     onlyoffice-desktopeditors
     pcloud
+    phinger-cursors
     pokemmo-installer
-    # pokemon-colorscripts
     sl
     spotify
     telegram-desktop
