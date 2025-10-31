@@ -14,7 +14,7 @@
       logo = {
         type = "kitty";
         source = ../../images/logos/nixos-uwu.png;
-        height = 15;
+        height = 20;
         width = 45;
         padding = {
           top = 6;
