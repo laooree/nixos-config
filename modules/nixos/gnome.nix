@@ -63,9 +63,13 @@
       gnomeExtensions.pip-on-top
       gnomeExtensions.paperwm
       gnomeExtensions.dash-to-dock
+      gnomeExtensions.user-themes
 
       # Customization
       gnome-tweaks
+
+      # Themes
+      yaru-theme
     ];
 
 }
