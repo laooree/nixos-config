@@ -10,9 +10,9 @@
   programs.kitty = {
     enable = true;
     font = lib.mkForce {
-      package = pkgs.nerd-fonts.iosevka;
-      name = "Iosevka Nerd Font";
-      size = 18;
+      package = pkgs.nerd-fonts.recursive-mono;
+      name = "RecMonoLinear Nerd Font";
+      size = 16;
     };
     settings = {
       confirm_os_window_close = 0;
@@ -23,6 +23,7 @@
       hide_window_decorations = true;
     };
     shellIntegration.enableZshIntegration = true;
+    themeFile = "Modus_Operandi";
   };
 
 }

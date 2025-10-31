@@ -15,11 +15,13 @@
     fira-sans
     libertine
     libertinus
+    nerd-fonts.arimo
     nerd-fonts.fira-mono
     nerd-fonts.iosevka
-    nerd-fonts.iosevka-term-slab
+    nerd-fonts.recursive-mono
     nerd-fonts.roboto-mono
     nerd-fonts.symbols-only
+    nerd-fonts.ubuntu
     noto-fonts-color-emoji
   ];
 }

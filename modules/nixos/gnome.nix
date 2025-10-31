@@ -11,6 +11,9 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
+  # Enable dconf
+  programs.dconf.enable = true;
+
   # Packages NOT to install with Gnome
   environment.gnome.excludePackages = (
     with pkgs;
