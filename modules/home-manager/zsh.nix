@@ -63,6 +63,7 @@
       add-zsh-hook precmd newline_before_prompt
 
 
+      # Function to compress pdf files:
       gs-pdf-compress() {
         if [[ $# -ne 2 ]]; then
           echo "Usage: gs-pdf-compress input.pdf output.pdf"
@@ -78,6 +79,11 @@
            -dDownsampleMonoImages=false \
            -dNOPAUSE -dBATCH \
            -sOutputFile="$output" "$input"
+            }
+
+      # Function to run emacs inside a nix-shell environment
+      nix-emacs () {
+        setsid nix-shell . --command "emacs" &> /dev/null
       }
     '';
 
