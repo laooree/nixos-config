@@ -67,9 +67,6 @@
 
       # Customization
       gnome-tweaks
-
-      # Themes
-      yaru-theme
     ];
 
 }
