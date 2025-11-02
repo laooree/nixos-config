@@ -12,6 +12,9 @@
     nerd-fonts.recursive-mono
     nerd-fonts.arimo
     nerd-fonts.ubuntu
+
+    # needed for markdown-mode
+    pandoc
   ];
 
 }
