@@ -15,6 +15,9 @@
 
     # needed for markdown-mode
     pandoc
+
+    # needed for copilot
+    nodePackages_latest.nodejs
   ];
 
 }
