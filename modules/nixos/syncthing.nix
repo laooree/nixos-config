@@ -86,4 +86,8 @@
     extraGroups = [ "syncthing" ];
   };
 
+  # Enable lingering to start service at boot
+  # and enable persistance on logout
+  users.users.laooree.linger = true;
+
 }
