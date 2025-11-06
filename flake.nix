@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
@@ -18,7 +19,7 @@
   };
 
   # outputs = { self, nixpkgs, stylix, ... }@inputs:
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, ... }@inputs:
     {
     nixosConfigurations.lambda = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -28,6 +29,14 @@
         inputs.home-manager.nixosModules.default
         inputs.xremap-flake.nixosModules.default
         # inputs.stylix.nixosModules.stylix
+        # Overlay to use unstable syncthing
+        ({ config, pkgs, ... }: {
+          nixpkgs.overlays = [
+            (final: prev: {
+              syncthing = nixpkgs-unstable.legacyPackages.${prev.system}.syncthing;
+            })
+          ];
+        })
       ];
     };
   };
