@@ -56,14 +56,13 @@
 
   environment.systemPackages = with pkgs;
     [
-      # Appearance
       gnomeExtensions.blur-my-shell
-
-      # Tiling behaviour
       gnomeExtensions.pip-on-top
       gnomeExtensions.paperwm
       gnomeExtensions.dash-to-dock
       gnomeExtensions.user-themes
+      # gnomeExtensions.tactile
+      # gnomeExtensions.just-perfection
 
       # Customization
       gnome-tweaks
