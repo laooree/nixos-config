@@ -165,6 +165,7 @@
     pcloud
     phinger-cursors
     pokemmo-installer
+    scilab-bin
     sl
     spotify
     telegram-desktop
