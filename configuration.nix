@@ -165,6 +165,7 @@
     pcloud
     phinger-cursors
     pokemmo-installer
+    qucs-s
     scilab-bin
     sl
     spotify
@@ -173,6 +174,7 @@
     tor-browser
     vlc
     xremap
+    xyce-parallel
     zip
     zoom-us
   ];
