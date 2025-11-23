@@ -3,23 +3,23 @@
 {
 
   environment.systemPackages = with pkgs; [
-    (pkgs.emacs.overrideAttrs (old: {
-      name = "emacs-31";
-      version = "31.0.50";  # or whatever prerelease version
+    # (pkgs.emacs.overrideAttrs (old: {
+    #   name = "emacs-31";
+    #   version = "31.0.50";
 
-      src = pkgs.fetchFromGitHub {
-        owner = "emacs-mirror";
-        repo = "emacs";
-        rev = "918b9f04f422efb7b614a9f71b004523a39d7674";
-        sha256 = "sha256-1e5qybetz3PXgy57LDRBPXhi8PgmiqqC5mv51K4LsYM=";
-      };
+    #   src = pkgs.fetchFromGitHub {
+    #     owner = "emacs-mirror";
+    #     repo = "emacs";
+    #     rev = "918b9f04f422efb7b614a9f71b004523a39d7674";
+    #     sha256 = "sha256-1e5qybetz3PXgy57LDRBPXhi8PgmiqqC5mv51K4LsYM=";
+    #   };
 
-      buildInputs = old.buildInputs ++ [
-        # additionalDependencies
-      ];
-    }))
+    #   buildInputs = old.buildInputs ++ [
+    #     # additionalDependencies
+    #   ];
+    # }))
 
-    # emacs
+    emacs
 
     git
     ispell
