@@ -143,7 +143,7 @@
     bluetui
     brave
     cava
-    inputs.nixpkgs-stable.legacyPackages.${pkgs.system}.deadbeef-with-plugins
+    deadbeef-with-plugins
     discord
     easyeffects
     epy
@@ -174,7 +174,7 @@
     tor-browser
     vlc
     xremap
-    inputs.nixpkgs-stable.legacyPackages.${pkgs.system}.xyce-parallel
+    xyce-parallel
     zip
     zoom-us
   ];

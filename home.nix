@@ -90,12 +90,8 @@
 
   programs.git = {
     enable = true;
-    settings = {
-      user = {
-      name = "laooree";
-      email = "andrea.lauri96@gmail.com";
-      };
-    };
+    userName = "laooree";
+    userEmail = "andrea.lauri96@gmail.com";
     # init.defaultBranch = "main";
   };
 }

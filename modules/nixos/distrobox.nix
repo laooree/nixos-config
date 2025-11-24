@@ -8,8 +8,8 @@
   };
 
   environment.systemPackages = with pkgs; [
-    distrobox
-    distroshelf
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.distrobox
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.distroshelf
   ];
 
 }
