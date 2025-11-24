@@ -17,10 +17,7 @@
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
     ./modules/nixos/programming-languages.nix
-    # ./modules/nixos/stylix.nix
-    # ./modules/nixos/sway.nix
     ./modules/nixos/syncthing.nix
-    # ./modules/nixos/virtualbox.nix
     ./modules/nixos/xremap.nix
   ];
 
@@ -134,6 +131,7 @@
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
+    PATH = [ "$HOME/.local/bin" ];
   };
 
   # Install firefox
@@ -159,6 +157,7 @@
     ipe
     kitty
     libreoffice
+    matlab-language-server
     mullvad-browser
     neovim
     obs-studio
