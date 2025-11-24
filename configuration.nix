@@ -11,6 +11,7 @@
     inputs.home-manager.nixosModules.default
 
     # custom modules
+    ./modules/nixos/distrobox.nix
     ./modules/nixos/emacs.nix
     ./modules/nixos/fonts.nix
     ./modules/nixos/gaming.nix
@@ -19,7 +20,7 @@
     # ./modules/nixos/stylix.nix
     # ./modules/nixos/sway.nix
     ./modules/nixos/syncthing.nix
-    ./modules/nixos/virtualbox.nix
+    # ./modules/nixos/virtualbox.nix
     ./modules/nixos/xremap.nix
   ];
 
@@ -144,7 +145,7 @@
     bluetui
     brave
     cava
-    deadbeef-with-plugins
+    inputs.nixpkgs-stable.legacyPackages.${pkgs.system}.deadbeef-with-plugins
     discord
     easyeffects
     epy
@@ -174,7 +175,7 @@
     tor-browser
     vlc
     xremap
-    xyce-parallel
+    inputs.nixpkgs-stable.legacyPackages.${pkgs.system}.xyce-parallel
     zip
     zoom-us
   ];
