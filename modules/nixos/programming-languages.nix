@@ -13,5 +13,8 @@
     # haskell
     haskell.packages.ghc967.ghc
     # haskell.packages.ghc967.haskell-language-server
+
+    # julia
+    julia
   ];
 }
