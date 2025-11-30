@@ -21,6 +21,7 @@
     nerd-fonts.recursive-mono
     nerd-fonts.roboto-mono
     nerd-fonts.symbols-only
+    nerd-fonts.tinos
     nerd-fonts.ubuntu
     noto-fonts-color-emoji
   ];

@@ -3,23 +3,23 @@
 {
 
   environment.systemPackages = with pkgs; [
-    # (pkgs.emacs.overrideAttrs (old: {
-    #   name = "emacs-31";
-    #   version = "31.0.50";
+    (pkgs.emacs.overrideAttrs (old: {
+      name = "emacs-31";
+      version = "31.0.50";
 
-    #   src = pkgs.fetchFromGitHub {
-    #     owner = "emacs-mirror";
-    #     repo = "emacs";
-    #     rev = "918b9f04f422efb7b614a9f71b004523a39d7674";
-    #     sha256 = "sha256-1e5qybetz3PXgy57LDRBPXhi8PgmiqqC5mv51K4LsYM=";
-    #   };
+      src = pkgs.fetchFromGitHub {
+        owner = "emacs-mirror";
+        repo = "emacs";
+        rev = "27f0a3fd869d3a73074f2023584430f6a5fd1162";
+        sha256 = "sha256-1e5qybetz3PXgy57LDRBPXhi8PgmiqqC5mv51K4LsYM=";
+      };
 
-    #   buildInputs = old.buildInputs ++ [
-    #     # additionalDependencies
-    #   ];
-    # }))
+      buildInputs = old.buildInputs ++ [
+        # additionalDependencies
+      ];
+    }))
 
-    emacs
+    # emacs
 
     git
     ispell
@@ -34,8 +34,12 @@
   ];
 
   fonts.packages = with pkgs; [
-    nerd-fonts.iosevka
     nerd-fonts.symbols-only
+    nerd-fonts.recursive-mono
+    nerd-fonts.tinos
+    nerd-fonts.ubuntu
+    noto-fonts-color-emoji
+    nerd-fonts.victor-mono
   ];
 
 }
