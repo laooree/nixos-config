@@ -23,7 +23,7 @@
       hide_window_decorations = true;
     };
     shellIntegration.enableZshIntegration = true;
-    themeFile = "Modus_Vivendi";
+    themeFile = "Modus_Operandi";
   };
 
 }
