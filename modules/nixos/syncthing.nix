@@ -14,11 +14,11 @@
   # Manually write the service
   # services.syncthing = {
   #   enable = true;
-  #   package = pkgs.syncthing;
-  #   opendefaultports = true;
+  #   package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.syncthing;
+  #   openDefaultPorts = true;
   #   user = "laooree";
-  #   datadir = "/home/laooree";
-  #   configdir = "/home/laooree/.config/syncthing";
+  #   dataDir = "/home/laooree";
+  #   configDir = "/home/laooree/.config/syncthing";
   # };
 
   environment.systemPackages = with pkgs; [
@@ -44,7 +44,8 @@
           --no-browser \
           --gui-address=127.0.0.1:8384 \
           --config=/home/laooree/.config/syncthing \
-          --data=/home/laooree/.config/syncthing
+          --data=/home/laooree/.config/syncthing \
+          --allow-newer-config
       '';
 
       Restart = "on-failure";
