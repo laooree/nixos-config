@@ -6,16 +6,21 @@
     (pkgs.emacs.overrideAttrs (old: {
       name = "emacs-31";
       version = "31.0.50";
-
       src = pkgs.fetchFromGitHub {
         owner = "emacs-mirror";
         repo = "emacs";
-        rev = "27f0a3fd869d3a73074f2023584430f6a5fd1162";
-        sha256 = "sha256-1e5qybetz3PXgy57LDRBPXhi8PgmiqqC5mv51K4LsYM=";
+        rev = "24297f6d9a2fb3bf464f25bdf80c85b13aa04a36";
+        sha256 = "sha256-HZfQg7s2/coBbq3BLnFZFw3BTP/UzKhPpIX1ms0TPOE=";
       };
-
       buildInputs = old.buildInputs ++ [
-        # additionalDependencies
+        pkgs.autoconf
+        pkgs.texinfo
+      ];
+      preConfigure = ''
+    ./autogen.sh
+  '';
+      configureFlags = (old.configureFlags or []) ++ [
+        "--prefix=${placeholder "out"}"
       ];
     }))
 
@@ -26,7 +31,7 @@
     nerd-fonts.arimo
     nerd-fonts.recursive-mono
     nerd-fonts.ubuntu
-    nixfmt-rfc-style
+    nixfmt
     nodePackages_latest.nodejs
     pandoc
     ripgrep

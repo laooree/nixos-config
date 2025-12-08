@@ -22,7 +22,8 @@
   # };
 
   environment.systemPackages = with pkgs; [
-    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.syncthing
+    # inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.syncthing
+    syncthing
   ];
 
   # Create a systemd service for Syncthing

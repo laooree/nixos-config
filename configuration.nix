@@ -140,15 +140,10 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    bluetui
     brave
-    cava
-    deadbeef-with-plugins
+    inputs.nixpkgs2505.legacyPackages.${pkgs.system}.deadbeef # fails on unstable because of swift-5.10.1 (2025-12-08)
     discord
     easyeffects
-    epy
-    fzf
-    gcc
     ghostscript
     gimp
     git
@@ -157,7 +152,6 @@
     ipe
     kitty
     libreoffice
-    matlab-language-server
     mullvad-browser
     neovim
     obs-studio
@@ -166,15 +160,15 @@
     phinger-cursors
     pokemmo-installer
     qucs-s
-    scilab-bin
     sl
     spotify
     telegram-desktop
     texliveFull texlab # latex + lsp
     tor-browser
+    vivaldi
     vlc
     xremap
-    xyce-parallel
+    inputs.nixpkgs2505.legacyPackages.${pkgs.system}.xyce-parallel # fails on unstable (2025-12-08)
     zip
     zoom-us
   ];
