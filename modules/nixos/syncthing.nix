@@ -14,7 +14,7 @@
   # Manually write the service
   # services.syncthing = {
   #   enable = true;
-  #   package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.syncthing;
+  #   package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.syncthing;
   #   openDefaultPorts = true;
   #   user = "laooree";
   #   dataDir = "/home/laooree";
@@ -22,7 +22,7 @@
   # };
 
   environment.systemPackages = with pkgs; [
-    # inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.syncthing
+    # inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.syncthing
     syncthing
   ];
 

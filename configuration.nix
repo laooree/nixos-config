@@ -141,7 +141,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     brave
-    inputs.nixpkgs2505.legacyPackages.${pkgs.system}.deadbeef # fails on unstable because of swift-5.10.1 (2025-12-08)
+    inputs.nixpkgs2505.legacyPackages.${pkgs.stdenv.hostPlatform.system}.deadbeef # fails on unstable because of swift-5.10.1 (2025-12-08)
     discord
     ghostscript
     gimp
@@ -167,7 +167,7 @@
     vivaldi
     vlc
     xremap
-    inputs.nixpkgs2505.legacyPackages.${pkgs.system}.xyce-parallel # fails on unstable (2025-12-08)
+    inputs.nixpkgs2505.legacyPackages.${pkgs.stdenv.hostPlatform.system}.xyce-parallel # fails on unstable (2025-12-08)
     zip
     zoom-us
   ];
