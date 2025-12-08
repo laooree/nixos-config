@@ -143,7 +143,6 @@
     brave
     inputs.nixpkgs2505.legacyPackages.${pkgs.system}.deadbeef # fails on unstable because of swift-5.10.1 (2025-12-08)
     discord
-    easyeffects
     ghostscript
     gimp
     git
