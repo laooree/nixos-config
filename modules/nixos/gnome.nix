@@ -66,6 +66,9 @@
 
       # Customization
       gnome-tweaks
+
+      # PDF viewer
+      evince
     ];
 
 }
