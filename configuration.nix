@@ -156,6 +156,7 @@
     obs-studio
     onlyoffice-desktopeditors
     pcloud
+    pdfarranger
     phinger-cursors
     pokemmo-installer
     qucs-s
