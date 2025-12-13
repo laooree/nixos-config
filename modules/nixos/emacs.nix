@@ -9,7 +9,7 @@
       src = pkgs.fetchFromGitHub {
         owner = "emacs-mirror";
         repo = "emacs";
-        rev = "24297f6d9a2fb3bf464f25bdf80c85b13aa04a36";
+        rev = "41ffeaec15b9a0f052de2d2e5eab23302c4ce46b";
         sha256 = "sha256-HZfQg7s2/coBbq3BLnFZFw3BTP/UzKhPpIX1ms0TPOE=";
       };
       buildInputs = old.buildInputs ++ [
