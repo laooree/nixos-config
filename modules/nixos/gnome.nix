@@ -47,6 +47,7 @@
       gnome-weather
       hitori # sudoku game
       iagno # go game
+      papers
       simple-scan
       tali # poker game
       totem # video player

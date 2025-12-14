@@ -10,9 +10,10 @@
 
     emacs.enable = false;
     firefox.enable = false;
+    kitty.enable = false;
     mako.enable = false;
-    sway.enable = false;
     rofi.enable = false;
+    sway.enable = false;
     waybar.enable = false;
 
   };
