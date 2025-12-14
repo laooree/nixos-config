@@ -32,12 +32,12 @@
         "audio/x-vorbis+ogg" = "deadbeef.desktop";
 
         # Browser
-        "text/html"                = "brave-browser.desktop";
-        "application/xhtml+xml"    = "brave-browser.desktop";
-        "x-scheme-handler/http"    = "brave-browser.desktop";
-        "x-scheme-handler/https"   = "brave-browser.desktop";
-        "x-scheme-handler/about"   = "brave-browser.desktop";
-        "x-scheme-handler/unknown" = "brave-browser.desktop";
+        "text/html"                = "vivaldi-stable.desktop";
+        "application/xhtml+xml"    = "vivaldi-stable.desktop";
+        "x-scheme-handler/http"    = "vivaldi-stable.desktop";
+        "x-scheme-handler/https"   = "vivaldi-stable.desktop";
+        "x-scheme-handler/about"   = "vivaldi-stable.desktop";
+        "x-scheme-handler/unknown" = "vivaldi-stable.desktop";
 
         # PDF
         "application/pdf"          = "firefox.desktop";
