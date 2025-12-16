@@ -150,10 +150,12 @@
     imagemagick
     inkscape-with-extensions
     ipe
+    kicad
     kitty
     libreoffice
     mullvad-browser
     neovim
+    ngspice
     obs-studio
     onlyoffice-desktopeditors
     pcloud
@@ -169,7 +171,6 @@
     vivaldi
     vlc
     xremap
-    inputs.nixpkgs2505.legacyPackages.${pkgs.stdenv.hostPlatform.system}.xyce-parallel # fails on unstable (2025-12-08)
     zip
     zoom-us
   ];
