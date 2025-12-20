@@ -9,8 +9,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "emacs-mirror";
         repo = "emacs";
-        rev = "7425e33287547b879c22c4f4ac1b7c78fcbdd6f9";
-        sha256 = "sha256-BLnR5LjFLYDbaNXzVrgsUpqJy/h1Q7EVzDMiDGI3Tn4=";
+        rev = "cf2e676ecab42a3f2add728eca20bb23d2a73728";
+        sha256 = "sha256-9aU1+yzKz9LBxPg2feYQDEb2qNZ6O92aX3GBEKHUoJw=";
       };
       buildInputs = old.buildInputs ++ [
         pkgs.autoconf
