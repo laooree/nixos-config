@@ -40,7 +40,7 @@
         "x-scheme-handler/unknown" = "vivaldi-stable.desktop";
 
         # PDF
-        "application/pdf"          = "firefox.desktop";
+        "application/pdf"          = "org.gnome.Evince.desktop";
 
         # Telegram
         "x-scheme-handler/tg"      = "org.telegram.desktop.desktop";
