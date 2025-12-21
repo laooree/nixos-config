@@ -62,7 +62,6 @@
       gnomeExtensions.paperwm
       gnomeExtensions.dash-to-dock
       gnomeExtensions.user-themes
-      gnomeExtensions.tactile
       gnomeExtensions.just-perfection
 
       # Customization
