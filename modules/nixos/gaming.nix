@@ -31,6 +31,9 @@
     azahar              # nintendo 3ds
     ppsspp-sdl-wayland  # psp
     mgba                # gba
+    dosbox              # dos
+
+    superTux
   ];
 
 }
