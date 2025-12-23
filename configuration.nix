@@ -141,6 +141,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    brave
     btop
     inputs.nixpkgs2505.legacyPackages.${pkgs.stdenv.hostPlatform.system}.deadbeef # fails on unstable because of swift-5.10.1 (2025-12-08)
     discord
@@ -153,7 +154,8 @@
     kicad
     kitty
     libreoffice
-    mullvad-browser
+    man-pages
+    man-pages-posix
     neovim
     ngspice
     obs-studio
@@ -168,7 +170,6 @@
     telegram-desktop
     texliveFull texlab # latex + lsp
     tor-browser
-    vivaldi
     vlc
     xremap
     zip
@@ -177,6 +178,12 @@
 
   systemd.user.targets.graphical-session = {
     wantedBy = [ "default.target" ];
+  };
+
+  # Enable man-pages
+  documentation = {
+    man.enable = true;
+    dev.enable = true;
   };
 
   # Some programs need SUID wrappers, can be configured further or are
