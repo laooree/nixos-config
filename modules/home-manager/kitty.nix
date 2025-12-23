@@ -22,6 +22,7 @@
       background_opacity = lib.mkForce 0.90;
       cursor_trail = 1;
       hide_window_decorations = true;
+      disable_ligatures = "always";
     };
     shellIntegration.enableZshIntegration = true;
     themeFile = "Modus_Vivendi";
