@@ -148,6 +148,7 @@
     ghostscript
     gimp
     git
+    golly
     imagemagick
     inkscape-with-extensions
     ipe
