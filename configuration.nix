@@ -141,6 +141,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    arduino
     brave
     btop
     inputs.nixpkgs2505.legacyPackages.${pkgs.stdenv.hostPlatform.system}.deadbeef # fails on unstable because of swift-5.10.1 (2025-12-08)
@@ -148,16 +149,17 @@
     ghostscript
     gimp
     git
-    golly
     imagemagick
     inkscape-with-extensions
     ipe
     kicad
     kitty
     libreoffice
+    logisim
     man-pages
     man-pages-posix
     neovim
+    nyancat
     ngspice
     obs-studio
     onlyoffice-desktopeditors
