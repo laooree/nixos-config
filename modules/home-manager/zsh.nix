@@ -17,7 +17,8 @@
       ll = "ls -la";
       vi = "nvim";
       vim = "nvim";
-      nix-test = ''sudo nixos-rebuild test --flake "/home/laooree/.dotfiles/"'';
+      nix-test   = ''sudo nixos-rebuild test   --flake "/home/laooree/.dotfiles/"'';
+      nix-switch = ''sudo nixos-rebuild switch --flake "/home/laooree/.dotfiles/"'';
       e = ''emacsclient --no-window --alternate-editor=""'';
       ed =''emacsclient --no-window --eval "(dired \"$(pwd)\")" --alternate-editor=""'';
       pip2nix = "nix run github:nix-community/pip2nix -- generate";
