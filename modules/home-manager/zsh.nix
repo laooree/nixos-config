@@ -29,7 +29,7 @@
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
 
     initContent = ''
-      PROMPT="%F{2}%n in %~"$'\n'"%f%k "
+      PROMPT="%F{#00d3d0}%n%f in %F{#ff66ff}%1~%f%k  "
 
       zstyle ':completion:*' menu select # tab opens cmp menu
       # zstyle ':completion:*' special-dirs true # force . and .. to show in cmp menu
@@ -45,25 +45,6 @@
       unsetopt prompt_sp # don't autoclean blanklines
       stty stop undef # disable accidental ctrl s
       bindkey -e # emacs keybindings
-
-      # Flag to avoid printing newline before first prompt
-      FIRST_PROMPT=1
-
-      function newline_before_prompt() {
-        if [[ $FIRST_PROMPT -eq 1 ]]; then
-          FIRST_PROMPT=0
-        else
-          local last_cmd=$(fc -ln -1)
-          if [[ "$last_cmd" != "clear" ]]; then
-          echo
-          fi
-        fi
-      }
-
-      # Register the hook
-      autoload -Uz add-zsh-hook
-      add-zsh-hook precmd newline_before_prompt
-
 
       # Function to compress pdf files:
       gs-pdf-compress() {
