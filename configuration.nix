@@ -155,7 +155,7 @@
     kicad
     kitty
     libreoffice
-    logisim
+    logisim-evolution
     man-pages
     man-pages-posix
     neovim
