@@ -17,7 +17,7 @@
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
     ./modules/nixos/programming-languages.nix
-    ./modules/nixos/stylix.nix
+    # ./modules/nixos/stylix.nix
     ./modules/nixos/syncthing.nix
     ./modules/nixos/xremap.nix
   ];
@@ -28,6 +28,7 @@
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelParams = [ "amd_iommu=off" ];
 
   networking.hostName = "lambda"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -173,6 +174,7 @@
     telegram-desktop
     texliveFull texlab # latex + lsp
     tor-browser
+    vivaldi
     vlc
     xremap
     zip
