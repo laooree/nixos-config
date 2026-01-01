@@ -58,11 +58,11 @@
   environment.systemPackages = with pkgs;
     [
       gnomeExtensions.blur-my-shell
-      gnomeExtensions.pip-on-top
-      gnomeExtensions.paperwm
       gnomeExtensions.dash-to-dock
-      gnomeExtensions.user-themes
       gnomeExtensions.just-perfection
+      gnomeExtensions.paperwm
+      gnomeExtensions.pip-on-top
+      gnomeExtensions.user-themes
 
       # Customization
       gnome-tweaks
