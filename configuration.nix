@@ -160,7 +160,6 @@
     man-pages
     man-pages-posix
     neovim
-    nyancat
     ngspice
     obs-studio
     onlyoffice-desktopeditors
