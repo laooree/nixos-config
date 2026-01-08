@@ -11,6 +11,7 @@
     enableCompletion = true;
     autosuggestion.enable = false;
     syntaxHighlighting.enable = true;
+    dotDir = "${config.xdg.configHome}/zsh";
 
     shellAliases = {
       la = "ls -a";
