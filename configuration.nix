@@ -1,6 +1,8 @@
 {
   config,
   pkgs,
+  pkgs2505,
+  pkgs2511,
   inputs,
   ...
 }:
@@ -126,42 +128,43 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    arduino
-    brave
-    btop
-    discord
-    ghostscript
-    gimp
-    git
-    imagemagick
-    inkscape-with-extensions
-    ipe
-    kicad
-    kitty
-    libreoffice
-    logisim-evolution
-    man-pages
-    man-pages-posix
-    neovim
-    ngspice
-    obs-studio
-    onlyoffice-desktopeditors
-    pcloud
-    pdfarranger
-    phinger-cursors
-    pokemmo-installer
-    qucs-s
-    sl
-    spotify
-    telegram-desktop
-    texliveFull texlab # latex + lsp
-    tor-browser
-    vivaldi
-    vlc
-    xremap
-    zip
-    zoom-us
+  environment.systemPackages = [
+    pkgs.arduino
+    pkgs.brave
+    pkgs.btop
+    pkgs.discord
+    pkgs.fooyin
+    pkgs.ghostscript
+    pkgs.gimp
+    pkgs.git
+    pkgs.imagemagick
+    pkgs.inkscape-with-extensions
+    pkgs.ipe
+    pkgs.kicad
+    pkgs.kitty
+    pkgs.libreoffice
+    pkgs.logisim-evolution
+    pkgs.man-pages
+    pkgs.man-pages-posix
+    pkgs.neovim
+    pkgs.ngspice
+    pkgs.obs-studio
+    pkgs.onlyoffice-desktopeditors
+    pkgs.pcloud
+    pkgs.pdfarranger
+    pkgs.phinger-cursors
+    pkgs.pokemmo-installer
+    pkgs.qucs-s
+    pkgs.sl
+    pkgs.spotify
+    pkgs.telegram-desktop
+    pkgs.texliveFull pkgs.texlab # latex + lsp
+    pkgs.tor-browser
+    pkgs.vivaldi
+    pkgs.vlc
+    pkgs.xremap
+    pkgs.zip
+    pkgs.zoom-us
   ];
 
   systemd.user.targets.graphical-session = {

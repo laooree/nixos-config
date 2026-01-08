@@ -21,16 +21,32 @@
 
   # outputs = { self, nixpkgs, stylix, ... }@inputs:
   outputs = { self, nixpkgs, ... }@inputs:
-    {
-    nixosConfigurations.lambda = nixpkgs.lib.nixosSystem {
+    let
+      # Configure alternative nixpkgs with allowUnfree
       system = "x86_64-linux";
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./configuration.nix
-        inputs.home-manager.nixosModules.default
-        inputs.xremap-flake.nixosModules.default
-        # inputs.stylix.nixosModules.stylix
-      ];
-    };
-  };
+      pkgs2511 = import inputs.nixpkgs2511 {
+        inherit system;
+        config.allowUnfree = true;
+      };
+      pkgs2505 = import inputs.nixpkgs2505 {
+        inherit system;
+        config.allowUnfree = true;
+      };
+    in
+      {
+        nixosConfigurations.lambda = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = {
+            inherit inputs;
+            inherit pkgs2511;
+            inherit pkgs2505;
+          };
+          modules = [
+            ./configuration.nix
+            inputs.home-manager.nixosModules.default
+            inputs.xremap-flake.nixosModules.default
+            # inputs.stylix.nixosModules.stylix
+          ];
+        };
+      };
 }
