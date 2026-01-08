@@ -130,7 +130,6 @@
     arduino
     brave
     btop
-    inputs.nixpkgs2505.legacyPackages.${pkgs.stdenv.hostPlatform.system}.deadbeef # fails on unstable because of swift-5.10.1 (2025-12-08)
     discord
     ghostscript
     gimp
