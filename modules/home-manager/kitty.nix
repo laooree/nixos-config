@@ -21,10 +21,11 @@
       window_margin_width = 0;
       background_opacity = lib.mkForce 0.90;
       cursor_trail = 1;
+      cursor_shape = "block";
       hide_window_decorations = true;
       disable_ligatures = "always";
     };
-    shellIntegration.enableZshIntegration = true;
+    shellIntegration.enableZshIntegration = false;
     themeFile = "Modus_Vivendi";
   };
 
