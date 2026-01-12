@@ -1,8 +1,7 @@
 {
   config,
   pkgs,
-  pkgs2505,
-  pkgs2511,
+  pkgs-unstable,
   inputs,
   ...
 }:
@@ -144,6 +143,7 @@
     pkgs.kitty
     pkgs.libreoffice
     pkgs.logisim-evolution
+    pkgs.ltspice
     pkgs.man-pages
     pkgs.man-pages-posix
     pkgs.neovim

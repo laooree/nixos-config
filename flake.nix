@@ -2,12 +2,11 @@
   description = "My NixOS config flake.";
 
   inputs = {
-    nixpkgs2511.url = "github:nixos/nixpkgs/nixos-25.11";
-    nixpkgs2505.url = "github:nixos/nixpkgs/nixos-25.05";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -24,11 +23,7 @@
     let
       # Configure alternative nixpkgs with allowUnfree
       system = "x86_64-linux";
-      pkgs2511 = import inputs.nixpkgs2511 {
-        inherit system;
-        config.allowUnfree = true;
-      };
-      pkgs2505 = import inputs.nixpkgs2505 {
+      pkgs-unstable = import inputs.nixpkgs-unstable {
         inherit system;
         config.allowUnfree = true;
       };
@@ -38,8 +33,7 @@
           inherit system;
           specialArgs = {
             inherit inputs;
-            inherit pkgs2511;
-            inherit pkgs2505;
+            inherit pkgs-unstable;
           };
           modules = [
             ./configuration.nix
