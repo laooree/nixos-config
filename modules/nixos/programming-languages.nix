@@ -14,8 +14,12 @@
     haskell.packages.ghc967.ghc
     haskell.packages.ghc967.haskell-language-server
 
-    # clang
+    # c
     gcc
+
+    # typst
+    typst
+    typstyle
 
   ];
 }
