@@ -19,7 +19,7 @@
       enable_audio_bell = false;
       window_padding_width = 10;
       window_margin_width = 0;
-      background_opacity = lib.mkForce 0.90;
+      background_opacity = lib.mkForce 0.92;
       cursor_trail = 1;
       cursor_shape = "block";
       hide_window_decorations = true;
