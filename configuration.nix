@@ -134,7 +134,6 @@
     pkgs.discord
     pkgs.fooyin
     pkgs.ghostscript
-    pkgs.ghostty
     pkgs.gimp
     pkgs.git
     pkgs.imagemagick
