@@ -13,4 +13,8 @@
     distroshelf
   ];
 
+  users.users.laooree = {
+    extraGroups = [ "podman" ];
+  };
+
 }

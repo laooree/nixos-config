@@ -23,6 +23,7 @@
       e = ''emacsclient --no-window --alternate-editor=""'';
       ed =''emacsclient --no-window --eval "(dired \"$(pwd)\")" --alternate-editor=""'';
       pip2nix = "nix run github:nix-community/pip2nix -- generate";
+      restart-xremap = "systemctl --user restart xremap.service";
     };
     history.size = 10000;
     history.ignoreAllDups = true;
