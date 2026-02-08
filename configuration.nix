@@ -128,6 +128,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [
+    pkgs.anytype
     pkgs.arduino
     pkgs.brave
     pkgs.btop
@@ -141,6 +142,7 @@
     pkgs.ipe
     pkgs.kicad
     pkgs.kitty
+    pkgs-unstable.ladybird
     pkgs.libreoffice
     pkgs.logisim-evolution
     pkgs.ltspice
