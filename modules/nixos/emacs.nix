@@ -11,6 +11,7 @@
     nodePackages_latest.nodejs
     pandoc
     ripgrep
+    wl-clipboard
   ];
 
   fonts.packages = with pkgs; [
