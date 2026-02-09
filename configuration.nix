@@ -152,6 +152,7 @@
     pkgs.ngspice
     pkgs.obs-studio
     pkgs.onlyoffice-desktopeditors
+    pkgs.p7zip
     pkgs.pcloud
     pkgs.pdfarranger
     pkgs.phinger-cursors
