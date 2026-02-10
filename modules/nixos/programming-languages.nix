@@ -20,6 +20,7 @@
     # typst
     typst
     typstyle
+    tinymist
 
   ];
 }
