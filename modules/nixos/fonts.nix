@@ -13,6 +13,7 @@
     cm_unicode
     dinish
     fira-sans
+    fira-math
     libertine
     libertinus
     nerd-fonts.arimo
