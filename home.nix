@@ -13,6 +13,7 @@
     ./modules/home-manager/default-applications.nix
     # ./modules/home-manager/easyeffects.nix
     ./modules/home-manager/ghostty.nix
+    ./modules/home-manager/gnome.nix
     ./modules/home-manager/kitty.nix
     # ./modules/home-manager/stylix.nix
     # ./modules/home-manager/sway.nix

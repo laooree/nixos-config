@@ -64,11 +64,10 @@
       gnomeExtensions.pip-on-top
       gnomeExtensions.user-themes
 
-      # Customization
       gnome-tweaks
-
-      # PDF viewer
+      gsettings-desktop-schemas
       evince
+      dconf-editor
+      dconf2nix
     ];
-
 }
