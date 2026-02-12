@@ -130,7 +130,6 @@
   environment.systemPackages = [
     pkgs.anytype
     pkgs.arduino
-    pkgs.brave
     pkgs.btop
     pkgs.discord
     pkgs.fooyin
@@ -142,7 +141,6 @@
     pkgs.ipe
     pkgs.kicad
     pkgs.kitty
-    pkgs-unstable.ladybird
     pkgs.libreoffice
     pkgs.logisim-evolution
     pkgs.ltspice
@@ -163,6 +161,7 @@
     pkgs.telegram-desktop
     pkgs.texliveFull pkgs.texlab # latex + lsp
     pkgs.tor-browser
+    pkgs.ungoogled-chromium
     pkgs.vivaldi
     pkgs.vlc
     pkgs.xremap
