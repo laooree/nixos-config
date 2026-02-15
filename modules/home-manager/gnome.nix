@@ -128,7 +128,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       enabled-extensions = [ "blur-my-shell@aunetx" "just-perfection-desktop@just-perfection" "paperwm@paperwm.github.com" "pip-on-top@rafostar.github.com" ];
-      favorite-apps = [ "vivaldi-stable.desktop" "org.gnome.Nautilus.desktop" ];
+      favorite-apps = [ "firefox.desktop" "org.gnome.Nautilus.desktop" ];
       welcome-dialog-last-shown-version = "49.2";
     };
 
