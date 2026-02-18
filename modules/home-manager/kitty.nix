@@ -17,7 +17,7 @@
     settings = {
       confirm_os_window_close = 0;
       enable_audio_bell = false;
-      window_padding_width = 10;
+      window_padding_width = 0;
       window_margin_width = 0;
       background_opacity = lib.mkForce 0.95;
       cursor_trail = 1;
