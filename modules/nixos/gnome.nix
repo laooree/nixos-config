@@ -14,6 +14,23 @@
   # Enable dconf
   programs.dconf.enable = true;
 
+  # Enable xdg portal
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gnome
+      xdg-desktop-portal-gtk
+    ];
+    config = {
+      common = {
+        default = [ "gtk" ];
+      };
+      gnome = {
+        default = [ "gnome" "gtk" ];
+      };
+    };
+  };
+
   # Packages NOT to install with Gnome
   environment.gnome.excludePackages = (
     with pkgs;
