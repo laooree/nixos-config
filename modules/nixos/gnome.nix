@@ -87,4 +87,8 @@
       dconf-editor
       dconf2nix
     ];
+
+  environment.variables = {
+    GTK_THEME = "Adwaita:dark";
+  };
 }
