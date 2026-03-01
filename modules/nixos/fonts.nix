@@ -24,6 +24,9 @@
     nerd-fonts.symbols-only
     nerd-fonts.tinos
     nerd-fonts.ubuntu
-    noto-fonts-color-emoji
+    noto-fonts
+    roboto
+    roboto-slab
+    roboto-serif
   ];
 }
