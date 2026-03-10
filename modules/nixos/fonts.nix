@@ -18,6 +18,7 @@
     libertinus
     nerd-fonts.arimo
     nerd-fonts.fira-mono
+    nerd-fonts.fira-code
     nerd-fonts.iosevka
     nerd-fonts.recursive-mono
     nerd-fonts.roboto-mono

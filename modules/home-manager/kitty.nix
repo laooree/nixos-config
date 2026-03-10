@@ -23,7 +23,7 @@
       cursor_trail = 1;
       cursor_shape = "block";
       hide_window_decorations = true;
-      disable_ligatures = "always";
+      disable_ligatures = "cursor";
     };
     shellIntegration.enableZshIntegration = false;
     themeFile = "Modus_Vivendi";
