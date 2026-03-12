@@ -14,8 +14,8 @@ with lib.hm.gvariant;
     "org/gnome/desktop/background" = {
       color-shading-type = "solid";
       picture-options = "zoom";
-      picture-uri="file:///home/laooree/.local/share/backgrounds/2025-10-25-10-20-47-orchid.jpg";
-      picture-uri-dark="file:///home/laooree/.local/share/backgrounds/2025-10-25-10-20-47-orchid.jpg";
+      picture-uri="file:///home/laooree/.local/share/backgrounds/2026-03-12-20-14-28-wave-Dark-nord.jpg";
+      picture-uri-dark="file:///home/laooree/.local/share/backgrounds/2026-03-12-20-14-28-wave-Dark-nord.jpg";
       primary-color="#000000000000";
       secondary-color="#000000000000";
     };
@@ -127,7 +127,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      enabled-extensions = [ "blur-my-shell@aunetx" "just-perfection-desktop@just-perfection" "paperwm@paperwm.github.com" "pip-on-top@rafostar.github.com" ];
+      enabled-extensions = [ "blur-my-shell@aunetx" "just-perfection-desktop@just-perfection" "paperwm@paperwm.github.com" "pip-on-top@rafostar.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" ];
       favorite-apps = [ "firefox.desktop" "org.gnome.Nautilus.desktop" ];
       welcome-dialog-last-shown-version = "49.2";
     };

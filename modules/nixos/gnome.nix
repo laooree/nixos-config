@@ -86,9 +86,13 @@
       evince
       dconf-editor
       dconf2nix
+
+      (pkgs.graphite-gtk-theme.override {
+        tweaks = [ "nord" ];
+      })
     ];
 
   environment.variables = {
-    GTK_THEME = "Adwaita:dark";
+    GTK_THEME = "Graphite-Dark-nord";
   };
 }
