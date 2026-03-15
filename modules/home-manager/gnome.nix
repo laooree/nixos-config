@@ -14,8 +14,8 @@ with lib.hm.gvariant;
     "org/gnome/desktop/background" = {
       color-shading-type = "solid";
       picture-options = "zoom";
-      picture-uri="file:///home/laooree/.local/share/backgrounds/2026-03-12-20-14-28-wave-Dark-nord.jpg";
-      picture-uri-dark="file:///home/laooree/.local/share/backgrounds/2026-03-12-20-14-28-wave-Dark-nord.jpg";
+      picture-uri="file:///home/laooree/.local/share/backgrounds/2026-03-14-17-38-00-sleepingFox.jpg";
+      picture-uri-dark="file:///home/laooree/.local/share/backgrounds/2026-03-14-17-38-00-sleepingFox.jpg";
       primary-color="#000000000000";
       secondary-color="#000000000000";
     };
