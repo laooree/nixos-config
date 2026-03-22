@@ -13,7 +13,7 @@
       font-family = "Iosevka Nerd Font";
       font-feature = "-calt, -liga, -dlig";
 
-      # background = "#000000";
+      theme = "Nord";
     };
   };
 }
