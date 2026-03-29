@@ -155,6 +155,7 @@
     pkgs.pdfarranger
     pkgs.phinger-cursors
     pkgs.pokemmo-installer
+    pkgs.qbittorrent
     pkgs.qucs-s
     pkgs.sl
     pkgs.spotify
