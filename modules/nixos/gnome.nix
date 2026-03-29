@@ -87,12 +87,13 @@
       dconf-editor
       dconf2nix
 
-      (pkgs.graphite-gtk-theme.override {
-        tweaks = [ "nord" ];
-      })
+      # (pkgs.graphite-gtk-theme.override {
+      #   tweaks = [ "black" ];
+      # })
+      pkgs.graphite-gtk-theme
     ];
 
   environment.variables = {
-    GTK_THEME = "Graphite-Dark-nord";
+    GTK_THEME = "Graphite-Dark";
   };
 }

@@ -26,7 +26,7 @@
       disable_ligatures = "cursor";
     };
     shellIntegration.enableZshIntegration = false;
-    themeFile = "Nord";
+    themeFile = "Modus_Vivendi";
   };
 
 }

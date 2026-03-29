@@ -13,7 +13,7 @@
       font-family = "Iosevka Nerd Font";
       font-feature = "-calt, -liga, -dlig";
 
-      theme = "Nord";
+      theme = "Modus Vivendi";
     };
   };
 }
