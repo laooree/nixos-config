@@ -122,8 +122,8 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>Return";
-      command = "kitty";
-      name = "kitty";
+      command = "ghostty";
+      name = "ghostty";
     };
 
     "org/gnome/shell" = {

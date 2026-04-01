@@ -14,6 +14,12 @@
       font-feature = "-calt, -liga, -dlig";
 
       theme = "Modus Vivendi";
+
+      shell-integration-features = "no-cursor";
+      cursor-style = "block";
+
+      maximize = true;
+      title = "ghostty";
     };
   };
 }
