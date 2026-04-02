@@ -20,6 +20,11 @@
 
       maximize = true;
       title = "ghostty";
+
+      custom-shader = "shaders/cursor_warp.glsl";
+      custom-shader-animation = "always";
     };
   };
+
+  xdg.configFile."ghostty/shaders/cursor_warp.glsl".source = ./sources/ghostty/cursor_warp.glsl;
 }
