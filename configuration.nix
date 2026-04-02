@@ -168,6 +168,7 @@
     pkgs.xremap
     pkgs.zip
     pkgs.zoom-us
+    pkgs-unstable.zotero
   ];
 
   systemd.user.targets.graphical-session = {
