@@ -16,6 +16,7 @@
 
     # c
     gcc
+    clang clang-tools
 
     # typst
     typst
