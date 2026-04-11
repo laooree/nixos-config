@@ -140,13 +140,12 @@
     pkgs.inkscape-with-extensions
     pkgs.ipe
     pkgs.kicad
-    pkgs.kitty
     pkgs.libreoffice
     pkgs.logisim-evolution
     pkgs.ltspice
     pkgs.man-pages
     pkgs.man-pages-posix
-    pkgs.neovim
+    pkgs-unstable.neovim
     pkgs.ngspice
     pkgs.obs-studio
     pkgs.onlyoffice-desktopeditors
