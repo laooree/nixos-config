@@ -18,6 +18,7 @@
     ./modules/nixos/fonts.nix
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
+    ./modules/nixos/my-packages.nix
     ./modules/nixos/programming-languages.nix
     # ./modules/nixos/stylix.nix
     ./modules/nixos/syncthing.nix
@@ -145,6 +146,8 @@
     pkgs.ltspice
     pkgs.man-pages
     pkgs.man-pages-posix
+    pkgs.manga-tui
+    pkgs.mullvad-browser
     pkgs-unstable.neovim
     pkgs.ngspice
     pkgs.obs-studio
