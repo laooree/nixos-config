@@ -153,7 +153,7 @@
     pkgs.obs-studio
     pkgs.onlyoffice-desktopeditors
     pkgs.p7zip
-    pkgs.pcloud
+    pkgs-unstable.pcloud
     pkgs.pdfarranger
     pkgs.phinger-cursors
     pkgs.pokemmo-installer
