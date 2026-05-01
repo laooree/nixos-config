@@ -10,15 +10,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # stylix = {
-    #   url = "github:danth/stylix";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
     xremap-flake.url = "github:xremap/nix-flake";
   };
 
-  # outputs = { self, nixpkgs, stylix, ... }@inputs:
   outputs = { self, nixpkgs, ... }@inputs:
     let
       # Configure alternative nixpkgs with allowUnfree

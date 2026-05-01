@@ -166,6 +166,7 @@
     pkgs.tor-browser
     pkgs.ungoogled-chromium
     pkgs.unzip
+    pkgs.vivaldi
     pkgs.vlc
     pkgs.xremap
     pkgs.zip
