@@ -147,7 +147,6 @@
     pkgs.man-pages
     pkgs.man-pages-posix
     pkgs.manga-tui
-    pkgs.mullvad-browser
     pkgs-unstable.neovim
     pkgs.ngspice
     pkgs.obs-studio
@@ -164,7 +163,6 @@
     pkgs.telegram-desktop
     pkgs.texliveFull pkgs.texlab # latex + lsp
     pkgs.tor-browser
-    pkgs.ungoogled-chromium
     pkgs.unzip
     pkgs.vivaldi
     pkgs.vlc
