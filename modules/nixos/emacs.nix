@@ -2,16 +2,16 @@
 
 {
 
-  environment.systemPackages = with pkgs; [
-    emacs-pgtk
+  environment.systemPackages = [
+    pkgs-unstable.emacs-pgtk
 
-    git
-    ispell
-    nixfmt
-    nodePackages_latest.nodejs
-    pandoc
-    ripgrep
-    wl-clipboard
+    pkgs.git
+    pkgs.ispell
+    pkgs.nixfmt
+    pkgs.nodePackages_latest.nodejs
+    pkgs.pandoc
+    pkgs.ripgrep
+    pkgs.wl-clipboard
   ];
 
   fonts.packages = with pkgs; [
