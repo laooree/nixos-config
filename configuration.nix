@@ -13,6 +13,7 @@
 
     # custom modules
     ./modules/nixos/audio.nix
+    ./modules/nixos/browser.nix
     ./modules/nixos/distrobox.nix
     ./modules/nixos/emacs.nix
     ./modules/nixos/fonts.nix
@@ -123,13 +124,9 @@
     PATH = [ "$HOME/.local/bin" ];
   };
 
-  # Install firefox
-  programs.firefox.enable = true;
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [
-    pkgs.anytype
     pkgs.arduino
     pkgs.btop
     pkgs.discord
@@ -162,9 +159,7 @@
     pkgs.spotify
     pkgs.telegram-desktop
     pkgs.texliveFull pkgs.texlab # latex + lsp
-    pkgs.tor-browser
     pkgs.unzip
-    pkgs-unstable.vivaldi
     pkgs.vlc
     pkgs.xremap
     pkgs.zip
