@@ -164,7 +164,7 @@
     pkgs.texliveFull pkgs.texlab # latex + lsp
     pkgs.tor-browser
     pkgs.unzip
-    pkgs.vivaldi
+    pkgs-unstable.vivaldi
     pkgs.vlc
     pkgs.xremap
     pkgs.zip
