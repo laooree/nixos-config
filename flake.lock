@@ -33,6 +33,26 @@
         "type": "github"
       }
     },
+    "hanoi": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs-unstable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1777746743,
+        "narHash": "sha256-T4xyoGLWJFlim0vFzaTDMDJNq4YxSP48MXosYozVSUY=",
+        "owner": "laooree",
+        "repo": "hanoi-tower",
+        "rev": "4999c9d5356477f0c84ddea4fc637e4ce3a5fd2f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "laooree",
+        "repo": "hanoi-tower",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -103,6 +123,7 @@
     },
     "root": {
       "inputs": {
+        "hanoi": "hanoi",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
