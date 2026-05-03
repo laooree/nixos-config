@@ -28,6 +28,12 @@ with lib.hm.gvariant;
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       enable-animations = true;
+      cursor-theme = "phinger-cursors-light";
+      gtk-theme = "Graphite-Dark-nord";
+      document-font-name = "Arimo Nerd Font 11";
+      font-name = "Arimo Nerd Font 11";
+      monospace-font-name="Iosevka Nerd Font 11";
+      show-battery-percentage = true;
     };
 
     "org/gnome/desktop/peripherals/keyboard" = {
@@ -256,6 +262,10 @@ with lib.hm.gvariant;
       switch-up-loop = [ "<Super>Up" ];
       switch-up-workspace = [ "<Control><Super>Up" ];
       toggle-top-and-position-bar = [ "" ];
+    };
+
+    "org/gnome/shell/extensions/user-theme" = {
+      name = "Graphite-Dark-nord";
     };
 
   };

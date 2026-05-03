@@ -13,7 +13,7 @@
       font-family = "Iosevka Nerd Font";
       font-feature = "-calt, -liga, -dlig";
 
-      theme = "Modus Vivendi";
+      theme = "Nord";
 
       shell-integration-features = "no-cursor";
       cursor-style = "block";
