@@ -24,4 +24,16 @@
     tinymist
 
   ];
+
+
+  # git options
+  programs.git = {
+    enable = true;
+    package = pkgs.git;
+
+    config = {
+      init.defaultBranch = "main";
+    };
+  };
+
 }
