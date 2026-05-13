@@ -32,12 +32,12 @@
         "audio/x-vorbis+ogg" = "deadbeef.desktop";
 
         # Browser
-        "text/html"                = "vivaldi-stable.desktop";
-        "application/xhtml+xml"    = "vivaldi-stable.desktop";
-        "x-scheme-handler/http"    = "vivaldi-stable.desktop";
-        "x-scheme-handler/https"   = "vivaldi-stable.desktop";
-        "x-scheme-handler/about"   = "vivaldi-stable.desktop";
-        "x-scheme-handler/unknown" = "vivaldi-stable.desktop";
+        "text/html"                = "firefox.desktop";
+        "application/xhtml+xml"    = "firefox.desktop";
+        "x-scheme-handler/http"    = "firefox.desktop";
+        "x-scheme-handler/https"   = "firefox.desktop";
+        "x-scheme-handler/about"   = "firefox.desktop";
+        "x-scheme-handler/unknown" = "firefox.desktop";
 
         # PDF
         "application/pdf"          = "org.gnome.Evince.desktop";
