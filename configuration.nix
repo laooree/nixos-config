@@ -133,7 +133,7 @@
     pkgs.ghostscript
     pkgs.gimp
     pkgs.git
-    inputs.hanoi.packages.${pkgs.system}.default
+    inputs.hanoi.packages.${pkgs.stdenv.hostPlatform.system}.default
     pkgs.imagemagick
     pkgs.inkscape-with-extensions
     pkgs.ipe
