@@ -88,7 +88,7 @@
       dconf2nix
 
       (pkgs.graphite-gtk-theme.override {
-        tweaks = [ "nord" ];
+        tweaks = [ "nord" "normal" ];
       })
     ];
 
