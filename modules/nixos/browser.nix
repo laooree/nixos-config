@@ -12,11 +12,11 @@
   environment.systemPackages = [
 
     (pkgs-unstable.vivaldi.overrideAttrs (oldAttrs: rec {
-    version = "8.0.4033.26";
+    version = "8.0.4033.28";
 
     src = pkgs.fetchurl {
       url = "https://downloads.vivaldi.com/stable/vivaldi-stable_${version}-1_amd64.deb";
-      hash = "sha256-6BexB3ZQLNqMPjM9XQgX3RowF+cEJcQmV/Z9QpzhKOE=";
+      hash = "sha256-l6XzArL+2tdfVGkBNv+RaziER7KArBR+u8CuS1unBcU=";
     };
     }))
 
