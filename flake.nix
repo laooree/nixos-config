@@ -19,15 +19,20 @@
       url = "github:laooree/hanoi-tower";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
+
+    emacs-overlay = {
+      url = "github:nix-community/emacs-overlay";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
     let
-      # Configure alternative nixpkgs with allowUnfree
       system = "x86_64-linux";
       pkgs-unstable = import inputs.nixpkgs-unstable {
         inherit system;
         config.allowUnfree = true;
+        overlays = [ inputs.emacs-overlay.overlays.default ];
       };
     in
       {
