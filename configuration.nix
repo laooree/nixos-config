@@ -158,7 +158,6 @@
     pkgs.sl
     pkgs.spotify
     pkgs.telegram-desktop
-    pkgs.texliveFull pkgs.texlab # latex + lsp
     pkgs.unzip
     pkgs.vlc
     pkgs.xremap

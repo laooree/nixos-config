@@ -18,6 +18,10 @@
     gcc
     clang clang-tools
 
+	# latex
+	texliveFull
+	texlab
+
     # typst
     typst
     typstyle
