@@ -13,8 +13,8 @@ let
     src = pkgs-unstable.fetchFromGitHub {
       owner = "emacsmirror";
       repo = "emacs";
-      rev = "07e02917eec4abb84ee8868636e30232c9b44466";
-      sha256 = "1lmylv8p248kianfgd41wyv5vi5l41fjz80mni8jnwqi3zgb0qv4";
+      rev = "e4350c538f4a2a9f1199812bdb38c3d2b73f20e8";
+      sha256 = "1lpcrwn9bri1nwv2c5g8pi6iw7vinl8a9l6mqx5y5dj2lng07vg5";
     };
   });
 in
