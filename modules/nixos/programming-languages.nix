@@ -27,6 +27,10 @@
     typstyle
     tinymist
 
+    # man pages
+    man-pages
+    man-pages-posix
+    man
   ];
 
 
@@ -38,6 +42,11 @@
     config = {
       init.defaultBranch = "main";
     };
+  };
+
+  documentation = {
+    man.generateCaches = true;
+    dev.enable = true;
   };
 
 }
