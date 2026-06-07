@@ -20,10 +20,6 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    emacs-overlay = {
-      url = "github:nix-community/emacs-overlay";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -32,7 +28,6 @@
       pkgs-unstable = import inputs.nixpkgs-unstable {
         inherit system;
         config.allowUnfree = true;
-        overlays = [ inputs.emacs-overlay.overlays.default ];
       };
     in
       {
