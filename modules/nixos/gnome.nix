@@ -8,8 +8,13 @@
 {
 
   # Enable the Gnome Desktop Environment.
+  # services.displayManager.ly.enable = true;
+  # security.pam.services.ly.enableGnomeKeyring = true;
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
+  # services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.wayland.enable = true;
+
 
   # Enable dconf
   programs.dconf.enable = true;

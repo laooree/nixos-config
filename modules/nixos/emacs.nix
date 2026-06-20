@@ -8,7 +8,7 @@ let
     };
   };
 
-  emacs-pgtk-native = (pkgs-unstable.emacs-pgtk.override {
+  emacs31-pgtk-native = (pkgs-unstable.emacs31-pgtk.override {
     stdenv = nativeStdenv;
   });
 
@@ -16,7 +16,7 @@ in
 
 {
   environment.systemPackages = [
-    emacs-pgtk-native
+    emacs31-pgtk-native
 
     pkgs.git
     pkgs.ispell

@@ -31,6 +31,9 @@
     man-pages
     man-pages-posix
     man
+
+    # make
+    gnumake
   ];
 
 
