@@ -29,7 +29,7 @@ with lib.hm.gvariant;
       color-scheme = "prefer-dark";
       enable-animations = true;
       cursor-theme = "phinger-cursors-light";
-      gtk-theme = "Graphite-Dark-nord";
+      gtk-theme = "Adwaita";
       document-font-name = "Arimo Nerd Font 11";
       font-name = "Arimo Nerd Font 11";
       monospace-font-name="Iosevka Nerd Font 11";
@@ -262,10 +262,6 @@ with lib.hm.gvariant;
       switch-up-loop = [ "<Super>Up" ];
       switch-up-workspace = [ "<Control><Super>Up" ];
       toggle-top-and-position-bar = [ "" ];
-    };
-
-    "org/gnome/shell/extensions/user-theme" = {
-      name = "Graphite-Dark-nord";
     };
 
   };

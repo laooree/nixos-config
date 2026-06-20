@@ -20,7 +20,6 @@
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
     ./modules/nixos/programming-languages.nix
-    # ./modules/nixos/stylix.nix
     ./modules/nixos/syncthing.nix
     ./modules/nixos/xremap.nix
   ];
@@ -165,10 +164,6 @@
     pkgs.zoom-us
     pkgs-unstable.zotero
   ];
-
-  systemd.user.targets.graphical-session = {
-    wantedBy = [ "default.target" ];
-  };
 
   # Enable man-pages
   documentation = {

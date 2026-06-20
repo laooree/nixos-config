@@ -8,12 +8,8 @@
 {
 
   # Enable the Gnome Desktop Environment.
-  # services.displayManager.ly.enable = true;
-  # security.pam.services.ly.enableGnomeKeyring = true;
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
-  # services.displayManager.sddm.enable = true;
-  # services.displayManager.sddm.wayland.enable = true;
 
 
   # Enable dconf
@@ -80,24 +76,15 @@
   environment.systemPackages = with pkgs;
     [
       gnomeExtensions.blur-my-shell
-      gnomeExtensions.dash-to-dock
       gnomeExtensions.just-perfection
       gnomeExtensions.paperwm
       gnomeExtensions.pip-on-top
       gnomeExtensions.user-themes
 
-      gnome-tweaks
       gsettings-desktop-schemas
       evince
       dconf-editor
       dconf2nix
 
-      (pkgs.graphite-gtk-theme.override {
-        tweaks = [ "nord" "normal" ];
-      })
     ];
-
-  environment.variables = {
-    GTK_THEME = "Graphite-Dark-nord";
-  };
 }

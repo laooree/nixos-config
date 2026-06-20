@@ -33,7 +33,7 @@
     mgba                # gba
     dosbox              # dos
 
-    superTux
+    supertux
   ];
 
 }
