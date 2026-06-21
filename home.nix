@@ -10,6 +10,7 @@
   imports = [
     ./modules/home-manager/cava.nix
     ./modules/home-manager/cli-tools.nix
+    ./modules/home-manager/home-declutter.nix
     ./modules/home-manager/default-applications.nix
     # ./modules/home-manager/easyeffects.nix
     ./modules/home-manager/ghostty.nix
@@ -18,7 +19,7 @@
     # ./modules/home-manager/stylix.nix
     # ./modules/home-manager/sway.nix
     # ./modules/home-manager/waybar.nix
-    ./modules/home-manager/zsh.nix
+    ./modules/home-manager/shell.nix
   ];
 
   # This value determines the Home Manager release that your configuration is

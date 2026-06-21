@@ -21,17 +21,17 @@
       nix-test   = ''sudo nixos-rebuild test   --flake "/home/laooree/.dotfiles/"'';
       nix-switch = ''sudo nixos-rebuild switch --flake "/home/laooree/.dotfiles/"'';
       e = ''emacsclient --no-window --alternate-editor=""'';
-      ed =''emacsclient --no-window --eval "(dired \"$(pwd)\")" --alternate-editor=""'';
       pip2nix = "nix run github:nix-community/pip2nix -- generate";
       restart-xremap = "systemctl --user restart xremap.service";
     };
     history.size = 10000;
     history.ignoreAllDups = true;
-    history.path = "$HOME/.zsh_history";
+    history.path = "${config.xdg.dataHome}/zsh/history";
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
 
     initContent = ''
       PROMPT="%F{#81a1c1}%n%f in %F{#b48ead}%1~%f%k  "
+      compinit -d "$XDG_CACHE_HOME/zsh/zcompdump"
 
       zstyle ':completion:*' menu select # tab opens cmp menu
       # zstyle ':completion:*' special-dirs true # force . and .. to show in cmp menu
@@ -74,6 +74,11 @@
       export COLORTERM=truecolor
     '';
 
+  };
+
+  programs.bash = {
+    enable = true;
+    historyFile = "${config.xdg.dataHome}/bash/history";
   };
 
 }
