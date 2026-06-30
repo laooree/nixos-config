@@ -21,7 +21,7 @@
     ./modules/nixos/gnome.nix
     ./modules/nixos/programming-languages.nix
     ./modules/nixos/syncthing.nix
-    ./modules/nixos/xremap.nix
+    # ./modules/nixos/xremap.nix
   ];
 
   # Bootloader.

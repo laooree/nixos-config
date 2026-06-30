@@ -10,10 +10,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    xremap-flake = {
-      url = "github:xremap/nix-flake";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
+    # xremap-flake = {
+    #   url = "github:xremap/nix-flake";
+    #   inputs.nixpkgs.follows = "nixpkgs-unstable";
+    # };
 
     hanoi = {
       url = "github:laooree/hanoi-tower";
@@ -40,7 +40,7 @@
           modules = [
             ./configuration.nix
             inputs.home-manager.nixosModules.default
-            inputs.xremap-flake.nixosModules.default
+            # inputs.xremap-flake.nixosModules.default
           ];
         };
       };
