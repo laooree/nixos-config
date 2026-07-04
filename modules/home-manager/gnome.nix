@@ -14,8 +14,8 @@ with lib.hm.gvariant;
     "org/gnome/desktop/background" = {
       color-shading-type = "solid";
       picture-options = "zoom";
-      picture-uri="file:///home/laooree/.local/share/backgrounds/2025-10-25-10-20-47-orchid.jpg";
-      picture-uri-dark="file:///home/laooree/.local/share/backgrounds/2025-10-25-10-20-47-orchid.jpg";
+      picture-uri="file:///home/laooree/Pictures/wallpapers/fox_sleep.jpg";
+      picture-uri-dark="file:///home/laooree/Pictures/wallpapers/fox_sleep.jpg";
       primary-color="#000000000000";
       secondary-color="#000000000000";
     };
@@ -128,8 +128,8 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>Return";
-      command = "ghostty";
-      name = "ghostty";
+      command = "kitty";
+      name = "kitty";
     };
 
     "org/gnome/shell" = {

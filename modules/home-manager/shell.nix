@@ -30,7 +30,7 @@
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
 
     initContent = ''
-      PROMPT="%F{#81a1c1}%n%f in %F{#b48ead}%1~%f%k  "
+      PROMPT="%F{#b59487}%n%f in %F{#eca28f}%1~%f%k  "
       compinit -d "$XDG_CACHE_HOME/zsh/zcompdump"
 
       zstyle ':completion:*' menu select # tab opens cmp menu
