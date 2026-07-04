@@ -2,6 +2,7 @@
   inputs,
   config,
   pkgs,
+  pkgs-unstable,
   ...
 }:
 
@@ -77,18 +78,18 @@
   };
 
 
-  environment.systemPackages = with pkgs;
-    [
-      gnomeExtensions.blur-my-shell
-      gnomeExtensions.just-perfection
-      gnomeExtensions.paperwm
-      gnomeExtensions.pip-on-top
-      gnomeExtensions.user-themes
+  environment.systemPackages = [
+      pkgs.gnomeExtensions.blur-my-shell
+      pkgs.gnomeExtensions.just-perfection
+      pkgs.gnomeExtensions.paperwm
+      pkgs.gnomeExtensions.pip-on-top
+      pkgs.gnomeExtensions.user-themes
+      # pkgs-unstable.gnomeExtensions.pop-shell
 
-      gsettings-desktop-schemas
-      evince
-      dconf-editor
-      dconf2nix
+      pkgs.gsettings-desktop-schemas
+      pkgs.evince
+      pkgs.dconf-editor
+      pkgs.dconf2nix
 
     ];
 }

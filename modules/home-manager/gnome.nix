@@ -14,8 +14,8 @@ with lib.hm.gvariant;
     "org/gnome/desktop/background" = {
       color-shading-type = "solid";
       picture-options = "zoom";
-      picture-uri="file:///home/laooree/Pictures/wallpapers/fox_sleep.jpg";
-      picture-uri-dark="file:///home/laooree/Pictures/wallpapers/fox_sleep.jpg";
+      picture-uri="file:///home/laooree/Pictures/Wallpapers/fox_sleep.jpg";
+      picture-uri-dark="file:///home/laooree/Pictures/Wallpapers/fox_sleep.jpg";
       primary-color="#000000000000";
       secondary-color="#000000000000";
     };
