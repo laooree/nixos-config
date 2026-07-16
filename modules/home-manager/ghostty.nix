@@ -10,7 +10,7 @@
     enable = true;
     settings = {
       font-size = 16;
-      font-family = "Iosevka Nerd Font";
+      font-family = "AdwaitaMono Nerd Font";
       font-feature = "-calt, -liga, -dlig";
 
       theme = "Selenized Black";

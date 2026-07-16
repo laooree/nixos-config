@@ -16,6 +16,7 @@
     fira-math
     libertine
     libertinus
+    nerd-fonts.adwaita-mono
     nerd-fonts.arimo
     nerd-fonts.fira-mono
     nerd-fonts.fira-code
