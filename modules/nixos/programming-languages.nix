@@ -27,6 +27,9 @@
     typstyle
     tinymist
 
+    # julia
+    julia-bin
+
     # man pages
     man-pages
     man-pages-posix
