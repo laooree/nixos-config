@@ -1,11 +1,19 @@
 {
   config,
   pkgs,
+  pkgs-unstable,
   inputs,
   ...
 }:
 
 {
+
+  ##### minecraft servers #####
+  services.minecraft-server = {
+    enable = true;
+    eula = true;
+    package = pkgs-unstable.minecraft-server;
+  };
 
   ##### hardware acceleration #####
   hardware.graphics = {
@@ -25,15 +33,24 @@
   };
 
   ##### emulators #####
-  environment.systemPackages = with pkgs; [
-    pcsx2               # ps2
-    desmume             # nintendo ds
-    azahar              # nintendo 3ds
-    ppsspp-sdl-wayland  # psp
-    mgba                # gba
-    dosbox              # dos
+  environment.systemPackages = [
+    pkgs.pcsx2               # ps2
+    pkgs.desmume             # nintendo ds
+    pkgs.azahar              # nintendo 3ds
+    pkgs.ppsspp-sdl-wayland  # psp
+    pkgs.mgba                # gba
+    pkgs.dosbox              # dos
 
-    supertux
+    pkgs.supertux
+
+    pkgs.prismlauncher       # minecraft
+
   ];
+
+  services.tailscale = {
+    enable = true;
+    package = pkgs-unstable.tailscale;
+  };
+  networking.firewall.trustedInterfaces = [ "tailscale0" ];
 
 }
