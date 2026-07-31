@@ -12,13 +12,12 @@
   environment.systemPackages = [
 
     (pkgs-unstable.vivaldi.overrideAttrs (oldAttrs: rec {
-      version = "8.1.4087.53";
+      version = "8.1.4087.61-1";
       src = pkgs.fetchurl {
-        url = "https://downloads.vivaldi.com/stable/vivaldi-stable_${version}-1_amd64.deb";
-        hash = "sha256-ZpO2xbf92KkreO4CkUMUweiqOJIbI/YMcRgE5PsaM+Q=";
+        url = "https://downloads.vivaldi.com/stable/vivaldi-stable_${version}_amd64.deb";
+        hash = "sha256-fluTiicLsQgqGsdBZlRo8QSLI03xjhhXwuZog3Dc44Y=";
       };
     }))
-
     pkgs-unstable.vivaldi-ffmpeg-codecs
 
     pkgs-unstable.tor-browser
