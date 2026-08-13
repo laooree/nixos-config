@@ -1,58 +1,58 @@
 { config, pkgs, inputs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
+    environment.systemPackages = with pkgs; [
 
-    # python
-    (python313.withPackages (python-pkgs: with python-pkgs; [
-      numpy
-      dbus-python  # needed for get-eduroam.py
-    ]))
-    pyright
+        # python
+        (python313.withPackages (python-pkgs: with python-pkgs; [
+            numpy
+            dbus-python  # needed for get-eduroam.py
+        ]))
+        pyright
 
-    # haskell
-    haskell.packages.ghc967.ghc
-    haskell.packages.ghc967.haskell-language-server
+        # haskell
+        haskell.packages.ghc967.ghc
+        haskell.packages.ghc967.haskell-language-server
 
-    # c
-    gcc
-    clang clang-tools
+        # c
+        gcc
+        clang clang-tools
 
-	# latex
-	texliveFull
-	texlab
+	    # latex
+	    texliveFull
+	    texlab
 
-    # typst
-    typst
-    typstyle
-    tinymist
+        # typst
+        typst
+        typstyle
+        tinymist
 
-    # julia
-    julia-bin
+        # julia
+        julia-bin
 
-    # man pages
-    man-pages
-    man-pages-posix
-    man
+        # man pages
+        man-pages
+        man-pages-posix
+        man
 
-    # make
-    gnumake
-  ];
+        # make
+        gnumake
+    ];
 
 
-  # git options
-  programs.git = {
-    enable = true;
-    package = pkgs.git;
+    # git options
+    programs.git = {
+        enable = true;
+        package = pkgs.git;
 
-    config = {
-      init.defaultBranch = "main";
+        config = {
+            init.defaultBranch = "main";
+        };
     };
-  };
 
-  documentation = {
-    man.cache.enable = true;
-    dev.enable = true;
-  };
+    documentation = {
+        man.cache.enable = true;
+        dev.enable = true;
+    };
 
 }

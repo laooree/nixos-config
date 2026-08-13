@@ -2,26 +2,26 @@
 
 {
 
-  # Enable firefox
-  programs.firefox = {
-    enable  = true;
-    package = pkgs-unstable.firefox;
-  };
+    # Enable firefox
+    programs.firefox = {
+        enable  = true;
+        package = pkgs-unstable.firefox;
+    };
 
 
-  environment.systemPackages = [
+    environment.systemPackages = [
 
-    (pkgs-unstable.vivaldi.overrideAttrs (oldAttrs: rec {
-      version = "8.1.4087.61-1";
-      src = pkgs.fetchurl {
-        url = "https://downloads.vivaldi.com/stable/vivaldi-stable_${version}_amd64.deb";
-        hash = "sha256-fluTiicLsQgqGsdBZlRo8QSLI03xjhhXwuZog3Dc44Y=";
-      };
-    }))
-    pkgs-unstable.vivaldi-ffmpeg-codecs
+        (pkgs-unstable.vivaldi.overrideAttrs (oldAttrs: rec {
+        version = "8.1.4087.64-1_amd64";
+        src = pkgs.fetchurl {
+            url = "https://downloads.vivaldi.com/stable/vivaldi-stable_${version}.deb";
+            hash = "sha256-JXu8TkrWPby/yyC29R9EpitzSpBwYHpH9bWwK2rzb10=";
+        };
+        }))
+        pkgs-unstable.vivaldi-ffmpeg-codecs
 
-    pkgs-unstable.tor-browser
+        pkgs-unstable.tor-browser
 
-  ];
+    ];
 
 }

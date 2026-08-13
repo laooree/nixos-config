@@ -2,19 +2,19 @@
 
 {
 
-  virtualisation.podman = {
-    enable = true;
-    package = pkgs.podman;
-    dockerCompat = true;
-  };
+    virtualisation.podman = {
+        enable = true;
+        package = pkgs.podman;
+        dockerCompat = true;
+    };
 
-  environment.systemPackages = with pkgs; [
-    distrobox
-    distroshelf
-  ];
+    environment.systemPackages = with pkgs; [
+        distrobox
+        distroshelf
+    ];
 
-  users.users.laooree = {
-    extraGroups = [ "podman" ];
-  };
+    users.users.laooree = {
+        extraGroups = [ "podman" ];
+    };
 
 }

@@ -2,22 +2,22 @@
 
 {
 
-  programs.niri = {
-    enable = true;
-    package = pkgs.niri;
-  };
+    programs.niri = {
+        enable = true;
+        package = pkgs.niri;
+    };
 
-  security = {
-    polkit.enable = true;
-    pam.services.swaylock = {};
-  };
+    security = {
+        polkit.enable = true;
+        pam.services.swaylock = {};
+    };
 
-  services.gnome.gnome-keyring.enable = true;
+    services.gnome.gnome-keyring.enable = true;
 
-  environment.systemPackages = [
-    pkgs-unstable.noctalia-shell
-    pkgs.xwayland-satellite
-    pkgs.nautilus
-  ];
+    environment.systemPackages = [
+        pkgs-unstable.noctalia-shell
+        pkgs.xwayland-satellite
+        pkgs.nautilus
+    ];
 
 }

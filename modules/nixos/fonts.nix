@@ -1,35 +1,35 @@
 {
-  inputs,
-  config,
-  pkgs,
-  ...
+    inputs,
+    config,
+    pkgs,
+    ...
 }:
 
 {
-  fonts.fontDir.enable = true;
-  fonts.fontconfig.enable = true;
+    fonts.fontDir.enable = true;
+    fonts.fontconfig.enable = true;
 
-  fonts.packages = with pkgs; [
-    cm_unicode
-    dinish
-    fira-sans
-    fira-math
-    libertine
-    libertinus
-    nerd-fonts.adwaita-mono
-    nerd-fonts.arimo
-    nerd-fonts.fira-mono
-    nerd-fonts.fira-code
-    nerd-fonts.go-mono
-    nerd-fonts.iosevka
-    nerd-fonts.recursive-mono
-    nerd-fonts.roboto-mono
-    nerd-fonts.symbols-only
-    nerd-fonts.tinos
-    nerd-fonts.ubuntu
-    noto-fonts
-    roboto
-    roboto-slab
-    roboto-serif
-  ];
+    fonts.packages = with pkgs; [
+        cm_unicode
+        dinish
+        fira-sans
+        fira-math
+        libertine
+        libertinus
+        nerd-fonts.adwaita-mono
+        nerd-fonts.arimo
+        nerd-fonts.fira-mono
+        nerd-fonts.fira-code
+        nerd-fonts.go-mono
+        nerd-fonts.iosevka
+        nerd-fonts.recursive-mono
+        nerd-fonts.roboto-mono
+        nerd-fonts.symbols-only
+        nerd-fonts.tinos
+        nerd-fonts.ubuntu
+        noto-fonts
+        roboto
+        roboto-slab
+        roboto-serif
+    ];
 }
