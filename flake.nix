@@ -10,16 +10,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # xremap-flake = {
-    #   url = "github:xremap/nix-flake";
-    #   inputs.nixpkgs.follows = "nixpkgs-unstable";
-    # };
-
-    hanoi = {
-      url = "github:laooree/hanoi-tower";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
-
   };
 
   outputs = { self, nixpkgs, ... }@inputs:

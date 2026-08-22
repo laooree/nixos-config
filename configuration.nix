@@ -19,6 +19,7 @@
     ./modules/nixos/fonts.nix
     ./modules/nixos/gaming.nix
     ./modules/nixos/gnome.nix
+    ./modules/nixos/my-packages.nix
     # ./modules/nixos/niri.nix
     ./modules/nixos/programming-languages.nix
     ./modules/nixos/syncthing.nix
@@ -133,7 +134,6 @@
     pkgs.ghostscript
     pkgs.gimp
     pkgs.git
-    inputs.hanoi.packages.${pkgs.stdenv.hostPlatform.system}.default
     pkgs.imagemagick
     pkgs.inkscape-with-extensions
     pkgs.ipe
