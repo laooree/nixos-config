@@ -30,7 +30,13 @@
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
 
     initContent = ''
-      PROMPT="%F{#b59487}%n%f in %F{#eca28f}%1~%f%k  "
+      # Custom prompt if zsh called from nix-shell
+      if [ -n "$IN_NIX_SHELL" ]; then
+        PROMPT="%F{#9fbfe2} nix-shell%f in %F{#b9d0aa}%1~%f%k  "
+      else
+        PROMPT="%F{#b59487}%n%f in %F{#eca28f}%1~%f%k  "
+      fi
+
       compinit -d "$XDG_CACHE_HOME/zsh/zcompdump"
 
       zstyle ':completion:*' menu select # tab opens cmp menu
