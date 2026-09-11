@@ -98,5 +98,7 @@
     networking.networkmanager.plugins = [
         pkgs.networkmanager-sstp
         pkgs.networkmanager-openconnect
+        pkgs.networkmanager-strongswan
+        pkgs.networkmanager-l2tp
     ];
 }
