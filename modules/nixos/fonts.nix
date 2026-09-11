@@ -18,12 +18,10 @@
         libertinus
         nerd-fonts.adwaita-mono
         nerd-fonts.arimo
-        nerd-fonts.fira-mono
         nerd-fonts.fira-code
         nerd-fonts.go-mono
         nerd-fonts.iosevka
-        nerd-fonts.recursive-mono
-        nerd-fonts.roboto-mono
+        nerd-fonts.jetbrains-mono
         nerd-fonts.symbols-only
         nerd-fonts.tinos
         nerd-fonts.ubuntu
