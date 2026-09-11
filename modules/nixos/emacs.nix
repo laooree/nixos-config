@@ -1,22 +1,8 @@
 { inputs, config, pkgs, pkgs-unstable, ... }:
 
-let
-
-    nativeStdenv = pkgs-unstable.stdenv.override {
-        hostPlatform = pkgs-unstable.stdenv.hostPlatform // {
-            gcc = { arch = "znver4"; tune = "znver4"; };
-        };
-    };
-
-    emacs31-pgtk-native = (pkgs-unstable.emacs31-pgtk.override {
-        stdenv = nativeStdenv;
-    });
-
-in
-
 {
     environment.systemPackages = [
-        emacs31-pgtk-native
+        pkgs-unstable.emacs-pgtk
 
         pkgs.git
         pkgs.ispell
@@ -27,7 +13,9 @@ in
     ];
 
     fonts.packages = with pkgs; [
-        nerd-fonts.symbols-only
+        nerd-fonts.adwaita-mono
         nerd-fonts.iosevka
+        nerd-fonts.jetbrains-mono
+        nerd-fonts.symbols-only
     ];
 }
