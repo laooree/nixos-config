@@ -101,4 +101,9 @@
         pkgs.networkmanager-strongswan
         pkgs.networkmanager-l2tp
     ];
+
+    # CVE-2026-91838
+    nixpkgs.config.permittedInsecurePackages = [
+        "NetworkManager-sstp-gnome-1.3.2"
+    ];
 }
