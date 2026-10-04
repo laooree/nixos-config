@@ -129,6 +129,7 @@
     environment.systemPackages = [
         pkgs.arduino
         pkgs.btop
+        pkgs.calibre
         pkgs.discord
         pkgs.fooyin
         pkgs.ghostscript

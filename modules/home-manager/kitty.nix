@@ -11,7 +11,7 @@
     enable = true;
     font = lib.mkForce {
       package = pkgs.nerd-fonts.recursive-mono;
-      name = "JetBrainsMono Nerd Font";
+      name = "AdwaitaMono Nerd Font";
       size = 16;
     };
     settings = {
