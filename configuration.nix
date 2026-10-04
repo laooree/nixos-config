@@ -141,7 +141,6 @@
         pkgs-unstable.krita
         pkgs.libreoffice
         pkgs.logisim-evolution
-        pkgs.ltspice
         pkgs.man-pages
         pkgs.man-pages-posix
         pkgs.manga-tui
@@ -164,7 +163,7 @@
         pkgs.xremap
         pkgs.zip
         pkgs.zoom-us
-        pkgs-unstable.zotero
+        pkgs.zotero
     ];
 
     # Enable man-pages
