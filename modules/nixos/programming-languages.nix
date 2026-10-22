@@ -37,6 +37,9 @@
 
         # make
         gnumake
+
+        # scheme
+        chicken
     ];
 
 
